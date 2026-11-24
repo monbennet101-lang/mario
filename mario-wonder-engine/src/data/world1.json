@@ -1,0 +1,959 @@
+{
+  "world": 1,
+  "title": "Benchmark World 1",
+  "version": "1.0.0",
+  "courses": [
+    {
+      "id": "course_1_1",
+      "code": "1-1",
+      "roomName": "1-1: Verdant Outskirts",
+      "title": "Verdant Outskirts",
+      "conceptThreeWords": "Stomp Shell Plains",
+      "theme": "plains",
+      "isWorld1Course": true,
+      "kiVisualDemo": true,
+      "twistKind": "shell_corridor",
+      "climaxKind": "stair_pyramid",
+      "cols": 196,
+      "rows": 24,
+      "spawnX": 3.0,
+      "spawnY": 2.5,
+      "floorBaselineY": 2.0,
+      "initialPowerUp": "super",
+      "description": "Course 1-1 (Verdant Outskirts): Open-air geometric plains with floating plateaus, Ki safe Sproutling & [?] coin, Shō 2-block gap & Hoplite intro, Ten 6-Enemy Shell Run 1-UP corridor, and Ketsu ascending stair pyramid to high-altitude flagpole.",
+      "perLevelGimmick": {
+        "id": "plains_plateaus_shell_run",
+        "name": "Floating Plateaus & Shell Run",
+        "summary": "Floating rectangular plateaus and bounded shell-bowling corridors layered over invariant stomp & shell mechanics."
+      },
+      "acts": [
+        {
+          "id": "KI",
+          "xStart": 1,
+          "xEnd": 44,
+          "spawnX": 3.0,
+          "spawnY": 2.5,
+          "signpostY": 2.0,
+          "safetyGuarantee": "100% solid floor below; zero pits, zero hazards; safe Sproutling & [?] coin block"
+        },
+        {
+          "id": "SHO",
+          "xStart": 45,
+          "xEnd": 96,
+          "spawnX": 46.0,
+          "spawnY": 2.5,
+          "signpostY": 2.0,
+          "safetyGuarantee": "Elevated Sproutling plateaus over 2-block gaps + Hoplite beetle intro + high ceiling route"
+        },
+        {
+          "id": "TEN",
+          "xStart": 97,
+          "xEnd": 152,
+          "spawnX": 98.0,
+          "spawnY": 2.5,
+          "signpostY": 2.0,
+          "safetyGuarantee": "Anticipated Twist Herald into bounded 6-Enemy Shell Run corridor awarding 1-UP"
+        },
+        {
+          "id": "KETSU",
+          "xStart": 153,
+          "xEnd": 194,
+          "spawnX": 154.0,
+          "spawnY": 2.5,
+          "signpostY": 2.0,
+          "safetyGuarantee": "Ascending 6-step stair pyramid launching directly onto high-altitude Goal Flagpole finial"
+        }
+      ],
+      "tileRects": [
+        { "x": 1, "y": 0, "w": 44, "h": 2, "type": "SOLID" },
+        { "x": 12, "y": 5, "w": 6, "h": 1, "type": "SOLID" },
+        { "x": 22, "y": 6, "w": 5, "h": 1, "type": "SOLID" },
+        { "x": 31, "y": 5, "w": 6, "h": 1, "type": "SOLID" },
+
+        { "x": 45, "y": 0, "w": 11, "h": 2, "type": "SOLID" },
+        { "x": 58, "y": 0, "w": 16, "h": 2, "type": "SOLID" },
+        { "x": 76, "y": 0, "w": 21, "h": 2, "type": "SOLID" },
+        { "x": 51, "y": 5, "w": 10, "h": 1, "type": "SOLID" },
+        { "x": 63, "y": 5, "w": 5, "h": 1, "type": "SEMISOLID" },
+        { "x": 78, "y": 5, "w": 8, "h": 1, "type": "SOLID" },
+        { "x": 47, "y": 9, "w": 5, "h": 1, "type": "SOLID" },
+        { "x": 58, "y": 9, "w": 5, "h": 1, "type": "SOLID" },
+        { "x": 69, "y": 9, "w": 6, "h": 1, "type": "SOLID" },
+        { "x": 81, "y": 9, "w": 6, "h": 1, "type": "SOLID" },
+        { "x": 89, "y": 4, "w": 6, "h": 1, "type": "SOLID" },
+        { "x": 94, "y": 2, "w": 1, "h": 2, "type": "SOLID" },
+
+        { "x": 97, "y": 0, "w": 50, "h": 2, "type": "SOLID" },
+        { "x": 106, "y": 2, "w": 2, "h": 3, "type": "PIPE" },
+        { "x": 143, "y": 2, "w": 2, "h": 3, "type": "PIPE" },
+        { "x": 93, "y": 9, "w": 5, "h": 1, "type": "SOLID" },
+        { "x": 104, "y": 9, "w": 6, "h": 1, "type": "SOLID" },
+        { "x": 116, "y": 9, "w": 6, "h": 1, "type": "SOLID" },
+        { "x": 122, "y": 13, "w": 1, "h": 5, "type": "SOLID" },
+        { "x": 128, "y": 9, "w": 6, "h": 1, "type": "SOLID" },
+        { "x": 140, "y": 9, "w": 6, "h": 1, "type": "SOLID" },
+        { "x": 147, "y": 0, "w": 6, "h": 1, "type": "SOLID" },
+
+        { "x": 153, "y": 0, "w": 42, "h": 2, "type": "SOLID" },
+        { "x": 152, "y": 9, "w": 5, "h": 1, "type": "SOLID" },
+        { "x": 160, "y": 2, "w": 1, "h": 1, "type": "HARD_BLOCK" },
+        { "x": 161, "y": 2, "w": 1, "h": 2, "type": "HARD_BLOCK" },
+        { "x": 162, "y": 2, "w": 1, "h": 3, "type": "HARD_BLOCK" },
+        { "x": 163, "y": 2, "w": 1, "h": 4, "type": "HARD_BLOCK" },
+        { "x": 164, "y": 2, "w": 1, "h": 5, "type": "HARD_BLOCK" },
+        { "x": 165, "y": 2, "w": 3, "h": 6, "type": "HARD_BLOCK" },
+        { "x": 174, "y": 2, "w": 1, "h": 1, "type": "HARD_BLOCK" }
+      ],
+      "singleTiles": [
+        { "x": 8, "y": 5, "type": "QUESTION_BLOCK" },
+        { "x": 9, "y": 5, "type": "BRICK_BLOCK" },
+        { "x": 10, "y": 5, "type": "QUESTION_BLOCK" },
+        { "x": 24, "y": 9, "type": "QUESTION_BLOCK" },
+        { "x": 34, "y": 8, "type": "QUESTION_BLOCK" },
+        { "x": 65, "y": 8, "type": "QUESTION_BLOCK" },
+        { "x": 89, "y": 2, "type": "BRICK_BLOCK" },
+        { "x": 89, "y": 3, "type": "BRICK_BLOCK" },
+        { "x": 124, "y": 5, "type": "BRICK_BLOCK" },
+        { "x": 125, "y": 5, "type": "QUESTION_BLOCK" },
+        { "x": 126, "y": 5, "type": "BRICK_BLOCK" }
+      ],
+      "powerUpBlocks": [
+        { "col": 10, "row": 5, "item": "adaptive_powerup" },
+        { "col": 65, "row": 8, "item": "fire_flower" },
+        { "col": 125, "row": 5, "item": "adaptive_powerup" }
+      ],
+      "enemies": [
+        { "kind": "sproutling", "x": 14.5, "y": 2.0, "dir": -1, "turnAtLedges": true },
+
+        { "kind": "sproutling", "x": 53.0, "y": 6.0, "dir": 1, "turnAtLedges": true },
+        { "kind": "sproutling", "x": 58.5, "y": 6.0, "dir": -1, "turnAtLedges": true },
+        { "kind": "hoplite", "x": 68.0, "y": 2.0, "dir": -1, "turnAtLedges": true },
+        { "kind": "sproutling", "x": 81.5, "y": 6.0, "dir": -1, "turnAtLedges": true },
+        { "kind": "hoplite", "x": 84.5, "y": 2.0, "dir": -1, "turnAtLedges": true },
+
+        { "kind": "hoplite", "x": 110.5, "y": 2.0, "dir": -1, "turnAtLedges": false },
+        { "kind": "sproutling", "x": 116.5, "y": 2.0, "dir": -1, "turnAtLedges": false },
+        { "kind": "sproutling", "x": 120.0, "y": 2.0, "dir": -1, "turnAtLedges": false },
+        { "kind": "sproutling", "x": 123.5, "y": 2.0, "dir": -1, "turnAtLedges": false },
+        { "kind": "sproutling", "x": 127.0, "y": 2.0, "dir": -1, "turnAtLedges": false },
+        { "kind": "sproutling", "x": 130.5, "y": 2.0, "dir": -1, "turnAtLedges": false },
+        { "kind": "sproutling", "x": 134.0, "y": 2.0, "dir": -1, "turnAtLedges": false }
+      ],
+      "propPlatforms": [
+        {
+          "id": "plains_antiphase_a",
+          "mode": "sine",
+          "startX": 146.2,
+          "startY": 5.2,
+          "endX": 146.2,
+          "endY": 8.4,
+          "periodSec": 3.4,
+          "phase": 0.0,
+          "width": 2.6,
+          "height": 0.45,
+          "oneWay": true,
+          "antiPhaseGroup": "plains_ten"
+        },
+        {
+          "id": "plains_antiphase_b",
+          "mode": "sine",
+          "startX": 150.2,
+          "startY": 5.2,
+          "endX": 150.2,
+          "endY": 8.4,
+          "periodSec": 3.4,
+          "phase": 0.5,
+          "width": 2.6,
+          "height": 0.45,
+          "oneWay": true,
+          "antiPhaseGroup": "plains_ten"
+        },
+        {
+          "id": "plains_secret_fallaway",
+          "mode": "fall_away",
+          "startX": 147.2,
+          "startY": 3.8,
+          "width": 3.6,
+          "height": 0.5,
+          "oneWay": false,
+          "label": "SECRET DROP"
+        }
+      ],
+      "springs": [
+        { "id": "plains_secret_spring", "x": 151.4, "y": 1.0, "label": "ESCAPE" }
+      ],
+      "warpTubes": [],
+      "geysers": [],
+      "horizontalJets": [],
+      "twistHerald": {
+        "id": "plains_ten_herald",
+        "x": 100.5,
+        "baseY": 2.0,
+        "height": 5.2,
+        "label": "TEN · 6-ENEMY SHELL RUN",
+        "anticipationRangeTiles": 6.5
+      },
+      "starMedallions": [
+        { "id": "w1_1_star1", "slotIndex": 0, "x": 91.8, "y": 2.9, "actId": "SHO", "route": "observation", "archetype": "observation", "hint": "Kick Hoplite shell through brick gate" },
+        { "id": "w1_1_star2", "slotIndex": 1, "x": 118.5, "y": 18.4, "actId": "TEN", "route": "ceiling", "archetype": "execution", "hint": "Sprint >= 9.20 t/s ceiling route + wall-jump" },
+        { "id": "w1_1_star3", "slotIndex": 2, "x": 149.0, "y": 2.0, "actId": "TEN", "route": "secret", "archetype": "risk_secret", "hint": "Drop beneath fall-away platform into crevice" }
+      ],
+      "secretCaches": [
+        { "id": "w1_1_1up", "x": 84.0, "y": 11.4, "actId": "SHO", "route": "ceiling", "rewardType": "1UP" }
+      ],
+      "safeguardLedges": [
+        { "id": "sg_sho_gap1", "x": 51, "y": 6.0, "telegraphFrames": 32, "purpose": "Elevated patrol plateau spans 2-block gap with clear sightline" },
+        { "id": "sg_ten_corridor", "x": 106, "y": 5.0, "telegraphFrames": 36, "purpose": "Bounded pipe backstop frames 6-Sproutling shell corridor safely" }
+      ],
+      "routes": {
+        "floor": {
+          "segments": [
+            { "id": "f_ki", "xStart": 1, "xEnd": 45, "y": 2.0 },
+            { "id": "f_sho_1", "xStart": 45, "xEnd": 56, "y": 2.0 },
+            { "id": "f_sho_2", "xStart": 58, "xEnd": 74, "y": 2.0 },
+            { "id": "f_sho_3", "xStart": 76, "xEnd": 97, "y": 2.0 },
+            { "id": "f_ten_corridor", "xStart": 97, "xEnd": 147, "y": 2.0 },
+            { "id": "f_ten_bridge", "xStart": 147, "xEnd": 153, "y": 1.0 },
+            { "id": "f_ketsu_base", "xStart": 153, "xEnd": 160, "y": 2.0 },
+            { "id": "f_ketsu_pyr1", "xStart": 160, "xEnd": 164, "y": 5.0 },
+            { "id": "f_ketsu_pyr2", "xStart": 164, "xEnd": 168, "y": 8.0 },
+            { "id": "f_ketsu_flag", "xStart": 170, "xEnd": 178, "y": 3.0 }
+          ]
+        },
+        "ceiling": {
+          "segments": [
+            { "id": "c_sho_1", "kind": "tile", "xStart": 47, "xEnd": 52, "y": 10.0 },
+            { "id": "c_sho_2", "kind": "tile", "xStart": 58, "xEnd": 63, "y": 10.0, "bounceEnemy": true },
+            { "id": "c_sho_3", "kind": "tile", "xStart": 69, "xEnd": 75, "y": 10.0 },
+            { "id": "c_sho_4", "kind": "tile", "xStart": 81, "xEnd": 87, "y": 10.0 },
+            { "id": "c_ten_0", "kind": "tile", "xStart": 93, "xEnd": 98, "y": 10.0 },
+            { "id": "c_ten_1", "kind": "tile", "xStart": 104, "xEnd": 110, "y": 10.0 },
+            { "id": "c_ten_2", "kind": "tile", "xStart": 116, "xEnd": 122, "y": 10.0 },
+            { "id": "c_ten_3", "kind": "tile", "xStart": 128, "xEnd": 134, "y": 10.0 },
+            { "id": "c_ten_4", "kind": "tile", "xStart": 140, "xEnd": 146, "y": 10.0 },
+            { "id": "c_ketsu_1", "kind": "tile", "xStart": 152, "xEnd": 157, "y": 10.0 }
+          ]
+        }
+      },
+      "shardArcs": [
+        { "id": "w1_1_arc_ki_1", "startX": 17.6, "startY": 6.6, "endX": 22.8, "endY": 7.6, "count": 5, "launchVx": 5.2, "apexHeight": 1.6 },
+        { "id": "w1_1_arc_ki_2", "startX": 26.6, "startY": 7.4, "endX": 31.6, "endY": 6.6, "count": 5, "launchVx": 5.2, "apexHeight": 1.5 },
+        { "id": "w1_1_arc_sho_gap", "startX": 54.6, "startY": 2.9, "endX": 59.4, "endY": 2.9, "count": 5, "launchVx": 5.2, "apexHeight": 1.8 },
+        { "id": "w1_1_arc_sho_ceil", "startX": 52.0, "startY": 10.8, "endX": 58.0, "endY": 10.8, "count": 5, "launchVx": 9.2, "apexHeight": 1.8 },
+        { "id": "w1_1_arc_ten_ceil", "startX": 110.2, "startY": 10.8, "endX": 116.2, "endY": 10.8, "count": 5, "launchVx": 9.2, "apexHeight": 1.8 },
+        { "id": "w1_1_arc_ketsu_flag", "startX": 168.0, "startY": 8.8, "endX": 175.4, "endY": 12.2, "count": 5, "launchVx": 9.2, "apexHeight": 1.6 }
+      ],
+      "coins": [
+        { "x": 13.5, "y": 7.0 }, { "x": 15.0, "y": 7.0 }, { "x": 16.5, "y": 7.0 },
+        { "x": 116.5, "y": 4.2 }, { "x": 120.0, "y": 4.2 }, { "x": 123.5, "y": 4.2 },
+        { "x": 127.0, "y": 4.2 }, { "x": 130.5, "y": 4.2 }, { "x": 134.0, "y": 4.2 },
+        { "x": 148.2, "y": 2.0 }, { "x": 150.0, "y": 2.0 }
+      ],
+      "flagpole": { "x": 174.5, "baseY": 3.0, "topY": 13.5 },
+      "slopeCues": [
+        { "x": 10.0, "y": 7.4, "text": "KI · [?] POWER COIN & SAFE SPROUTLING", "color": "#4ADE80" },
+        { "x": 56.0, "y": 8.2, "text": "SHŌ · 2-BLOCK GAP & HOPLITE INTRO", "color": "#38BDF8" },
+        { "x": 125.0, "y": 7.8, "text": "TEN · 6-ENEMY SHELL RUN -> 1-UP!", "color": "#FACC15" },
+        { "x": 166.5, "y": 11.2, "text": "KETSU · PYRAMID JUMP -> MAX BONUS", "color": "#FDE047" }
+      ]
+    },
+    {
+      "id": "course_1_2",
+      "code": "1-2",
+      "roomName": "1-2: Deep Slate Cavern",
+      "title": "Deep Slate Cavern",
+      "conceptThreeWords": "Slate Spring Cavern",
+      "theme": "cavern",
+      "isWorld1Course": true,
+      "kiVisualDemo": true,
+      "twistKind": "wall_chimney",
+      "climaxKind": "fallaway_exit_pipe",
+      "cols": 196,
+      "rows": 26,
+      "spawnX": 3.0,
+      "spawnY": 2.5,
+      "floorBaselineY": 2.0,
+      "initialPowerUp": "super",
+      "description": "Course 1-2 (Deep Slate Cavern): Enclosed dark slate subterranean cavern with neon cyan accents, Ki safe compression spring alcove, Shō springs over 3-block spike pits, Ten 3-tile vertical wall-jump chimney with ascending platform, and Ketsu 3 oscillating fall-away platforms into exit pipe.",
+      "perLevelGimmick": {
+        "id": "cavern_springs_chimney",
+        "name": "Compression Springs & Wall Chimney",
+        "summary": "Compression springs, 3-block spike pits, vertical wall-jump chimney with rising lift, and oscillating fall-away exit gauntlet."
+      },
+      "acts": [
+        {
+          "id": "KI",
+          "xStart": 1,
+          "xEnd": 42,
+          "spawnX": 3.0,
+          "spawnY": 2.5,
+          "signpostY": 2.0,
+          "safetyGuarantee": "100% solid cavern floor; zero pits, zero spikes; safe Compression Spring alcove"
+        },
+        {
+          "id": "SHO",
+          "xStart": 43,
+          "xEnd": 98,
+          "spawnX": 44.0,
+          "spawnY": 2.5,
+          "signpostY": 2.0,
+          "safetyGuarantee": "Compression Springs over 3-block spike pits launching cleanly to high cyan ledges"
+        },
+        {
+          "id": "TEN",
+          "xStart": 99,
+          "xEnd": 142,
+          "spawnX": 100.0,
+          "spawnY": 2.5,
+          "signpostY": 2.0,
+          "safetyGuarantee": "3-tile narrow vertical Wall-Jump chimney with ascending safety platform from below"
+        },
+        {
+          "id": "KETSU",
+          "xStart": 143,
+          "xEnd": 194,
+          "spawnX": 144.5,
+          "spawnY": 9.0,
+          "signpostY": 8.0,
+          "safetyGuarantee": "Sprinting leap across 3 oscillating fall-away platforms directly into the Exit Pipe"
+        }
+      ],
+      "tileRects": [
+        { "x": 1, "y": 23, "w": 194, "h": 3, "type": "SOLID" },
+        { "x": 1, "y": 0, "w": 42, "h": 2, "type": "SOLID" },
+        { "x": 1, "y": 14, "w": 42, "h": 9, "type": "SOLID" },
+        { "x": 14, "y": 4, "w": 5, "h": 1, "type": "SEMISOLID" },
+        { "x": 8, "y": 7, "w": 7, "h": 1, "type": "SEMISOLID" },
+        { "x": 29, "y": 2, "w": 4, "h": 4, "type": "SOLID" },
+
+        { "x": 43, "y": 0, "w": 56, "h": 1, "type": "SOLID" },
+        { "x": 43, "y": 1, "w": 9, "h": 1, "type": "SOLID" },
+        { "x": 52, "y": 1, "w": 3, "h": 1, "type": "HAZARD" },
+        { "x": 55, "y": 1, "w": 12, "h": 1, "type": "SOLID" },
+        { "x": 67, "y": 1, "w": 3, "h": 1, "type": "HAZARD" },
+        { "x": 70, "y": 1, "w": 13, "h": 1, "type": "SOLID" },
+        { "x": 83, "y": 1, "w": 3, "h": 1, "type": "HAZARD" },
+        { "x": 86, "y": 1, "w": 13, "h": 1, "type": "SOLID" },
+
+        { "x": 55, "y": 6, "w": 8, "h": 1, "type": "SOLID" },
+        { "x": 70, "y": 7, "w": 10, "h": 1, "type": "SOLID" },
+        { "x": 76, "y": 10, "w": 4, "h": 1, "type": "SOLID" },
+        { "x": 79, "y": 8, "w": 1, "h": 2, "type": "SOLID" },
+        { "x": 86, "y": 7, "w": 8, "h": 1, "type": "SOLID" },
+
+        { "x": 46, "y": 11, "w": 5, "h": 1, "type": "SOLID" },
+        { "x": 57, "y": 11, "w": 6, "h": 1, "type": "SOLID" },
+        { "x": 69, "y": 12, "w": 6, "h": 1, "type": "SOLID" },
+        { "x": 81, "y": 12, "w": 6, "h": 1, "type": "SOLID" },
+        { "x": 93, "y": 12, "w": 5, "h": 1, "type": "SOLID" },
+
+        { "x": 99, "y": 0, "w": 44, "h": 2, "type": "SOLID" },
+        { "x": 110, "y": 5, "w": 1, "h": 15, "type": "SOLID" },
+        { "x": 114, "y": 2, "w": 11, "h": 14, "type": "SOLID" },
+        { "x": 125, "y": 2, "w": 7, "h": 10, "type": "SOLID" },
+        { "x": 132, "y": 2, "w": 11, "h": 6, "type": "SOLID" },
+        { "x": 104, "y": 12, "w": 5, "h": 1, "type": "SOLID" },
+        { "x": 116, "y": 18, "w": 6, "h": 1, "type": "SOLID" },
+        { "x": 128, "y": 16, "w": 6, "h": 1, "type": "SOLID" },
+
+        { "x": 143, "y": 0, "w": 8, "h": 8, "type": "SOLID" },
+        { "x": 140, "y": 14, "w": 6, "h": 1, "type": "SOLID" },
+        { "x": 158, "y": 0, "w": 8, "h": 2, "type": "SOLID" },
+        { "x": 168, "y": 5, "w": 4, "h": 1, "type": "SEMISOLID" },
+        { "x": 173, "y": 0, "w": 22, "h": 8, "type": "SOLID" },
+        { "x": 182, "y": 8, "w": 13, "h": 15, "type": "SOLID" }
+      ],
+      "singleTiles": [
+        { "x": 11, "y": 10, "type": "QUESTION_BLOCK" },
+        { "x": 22, "y": 5, "type": "QUESTION_BLOCK" },
+        { "x": 58, "y": 9, "type": "QUESTION_BLOCK" },
+        { "x": 73, "y": 10, "type": "QUESTION_BLOCK" },
+        { "x": 76, "y": 8, "type": "BRICK_BLOCK" },
+        { "x": 76, "y": 9, "type": "BRICK_BLOCK" },
+        { "x": 120, "y": 21, "type": "QUESTION_BLOCK" }
+      ],
+      "powerUpBlocks": [
+        { "col": 11, "row": 10, "item": "adaptive_powerup" },
+        { "col": 58, "row": 9, "item": "fire_flower" }
+      ],
+      "enemies": [
+        { "kind": "sproutling", "x": 21.0, "y": 2.0, "dir": -1, "turnAtLedges": true },
+        { "kind": "sproutling", "x": 59.0, "y": 7.0, "dir": -1, "turnAtLedges": true },
+        { "kind": "hoplite", "x": 72.5, "y": 8.0, "dir": -1, "turnAtLedges": true },
+        { "kind": "sproutling", "x": 90.0, "y": 8.0, "dir": -1, "turnAtLedges": true },
+        { "kind": "hoplite", "x": 120.0, "y": 16.0, "dir": -1, "turnAtLedges": true }
+      ],
+      "springs": [
+        { "id": "cavern_ki_spring_1", "x": 11.0, "y": 2.0, "label": "NORMAL / SUPER" },
+        { "id": "cavern_ki_spring_2", "x": 26.5, "y": 2.0, "label": "STEP" },
+        { "id": "cavern_sho_spring_1", "x": 50.0, "y": 2.0, "label": "TIMED" },
+        { "id": "cavern_sho_spring_2", "x": 65.0, "y": 2.0, "label": "TIMED" },
+        { "id": "cavern_sho_spring_3", "x": 81.0, "y": 2.0, "label": "TIMED" },
+        { "id": "cavern_ten_spring_entry", "x": 106.5, "y": 2.0, "label": "BOOST" },
+        { "id": "cavern_secret_spring", "x": 164.0, "y": 2.0, "label": "ESCAPE" }
+      ],
+      "propPlatforms": [
+        {
+          "id": "cavern_chimney_elevator",
+          "mode": "linear",
+          "startX": 111.1,
+          "startY": 2.3,
+          "endX": 111.1,
+          "endY": 15.6,
+          "speed": 3.4,
+          "width": 2.8,
+          "height": 0.45,
+          "oneWay": true,
+          "label": "CHIMNEY LIFT"
+        },
+        {
+          "id": "cavern_fall_1",
+          "mode": "fall_away",
+          "startX": 152.5,
+          "startY": 7.8,
+          "width": 3.4,
+          "height": 0.5,
+          "oneWay": false,
+          "oscillateAmpY": 0.45,
+          "oscillatePeriodSec": 2.4,
+          "phase": 0.0,
+          "label": "FALL 1"
+        },
+        {
+          "id": "cavern_fall_2",
+          "mode": "fall_away",
+          "startX": 159.2,
+          "startY": 8.2,
+          "width": 3.4,
+          "height": 0.5,
+          "oneWay": false,
+          "oscillateAmpY": 0.45,
+          "oscillatePeriodSec": 2.4,
+          "phase": 0.33,
+          "label": "FALL 2"
+        },
+        {
+          "id": "cavern_fall_3",
+          "mode": "fall_away",
+          "startX": 165.9,
+          "startY": 7.8,
+          "width": 3.4,
+          "height": 0.5,
+          "oneWay": false,
+          "oscillateAmpY": 0.45,
+          "oscillatePeriodSec": 2.4,
+          "phase": 0.66,
+          "label": "FALL 3"
+        }
+      ],
+      "warpTubes": [
+        {
+          "id": "cavern_exit_pipe",
+          "x": 180.0,
+          "y": 8.0,
+          "entryVector": "RIGHT",
+          "stemLength": 1.0,
+          "isGoalPipe": true,
+          "destX": 180.0,
+          "destY": 8.0,
+          "destSubArea": false,
+          "exitFacingRight": true,
+          "label": "EXIT PIPE",
+          "color": "#06B6D4",
+          "accentColor": "#67E8F9"
+        }
+      ],
+      "geysers": [],
+      "horizontalJets": [],
+      "twistHerald": {
+        "id": "cavern_ten_herald",
+        "x": 102.5,
+        "baseY": 2.0,
+        "height": 5.5,
+        "label": "TEN · WALL-JUMP CHIMNEY",
+        "anticipationRangeTiles": 6.5
+      },
+      "starMedallions": [
+        { "id": "w1_2_star1", "slotIndex": 0, "x": 77.6, "y": 8.9, "actId": "SHO", "route": "observation", "archetype": "observation", "hint": "Kick Hoplite shell through brick gate" },
+        { "id": "w1_2_star2", "slotIndex": 1, "x": 124.8, "y": 20.6, "actId": "TEN", "route": "ceiling", "archetype": "execution", "hint": "Wall-jump chimney + sprint >= 9.20 t/s ceiling leap" },
+        { "id": "w1_2_star3", "slotIndex": 2, "x": 161.0, "y": 3.0, "actId": "KETSU", "route": "secret", "archetype": "risk_secret", "hint": "Drop beneath fall-away platform into crevice" }
+      ],
+      "secretCaches": [
+        { "id": "w1_2_1up", "x": 84.0, "y": 14.4, "actId": "SHO", "route": "ceiling", "rewardType": "1UP" }
+      ],
+      "safeguardLedges": [
+        { "id": "sg_cavern_spike1", "x": 50, "y": 2.0, "telegraphFrames": 30, "purpose": "Recessed 3-block spike pit preceded by flat staging deck & compression spring" },
+        { "id": "sg_cavern_chimney", "x": 111, "y": 2.3, "telegraphFrames": 36, "purpose": "Ascending safety lift inside 3-tile vertical chimney prevents softlock" }
+      ],
+      "routes": {
+        "floor": {
+          "segments": [
+            { "id": "f_ki", "xStart": 1, "xEnd": 43, "y": 2.0 },
+            { "id": "f_sho_1", "xStart": 43, "xEnd": 52, "y": 2.0 },
+            { "id": "f_sho_2", "xStart": 55, "xEnd": 67, "y": 2.0 },
+            { "id": "f_sho_3", "xStart": 70, "xEnd": 83, "y": 2.0 },
+            { "id": "f_sho_4", "xStart": 86, "xEnd": 99, "y": 2.0 },
+            { "id": "f_ten_base", "xStart": 99, "xEnd": 111, "y": 2.0 },
+            { "id": "f_ten_lift1", "xStart": 111, "xEnd": 114, "y": 5.0 },
+            { "id": "f_ten_lift2", "xStart": 111, "xEnd": 114, "y": 8.0 },
+            { "id": "f_ten_lift3", "xStart": 111, "xEnd": 114, "y": 11.0 },
+            { "id": "f_ten_lift4", "xStart": 111, "xEnd": 114, "y": 14.0 },
+            { "id": "f_ten_summit", "xStart": 114, "xEnd": 125, "y": 16.0 },
+            { "id": "f_ten_step", "xStart": 125, "xEnd": 132, "y": 12.0 },
+            { "id": "f_ten_exit", "xStart": 132, "xEnd": 151, "y": 8.0 },
+            { "id": "f_ketsu_fall1", "xStart": 152.5, "xEnd": 155.9, "y": 8.3 },
+            { "id": "f_ketsu_fall2", "xStart": 159.2, "xEnd": 162.6, "y": 8.7 },
+            { "id": "f_ketsu_fall3", "xStart": 165.9, "xEnd": 169.3, "y": 8.3 },
+            { "id": "f_ketsu_pipe", "xStart": 173, "xEnd": 182, "y": 8.0 }
+          ]
+        },
+        "ceiling": {
+          "segments": [
+            { "id": "c_sho_1", "kind": "tile", "xStart": 46, "xEnd": 51, "y": 12.0 },
+            { "id": "c_sho_2", "kind": "tile", "xStart": 57, "xEnd": 63, "y": 12.0 },
+            { "id": "c_sho_3", "kind": "tile", "xStart": 69, "xEnd": 75, "y": 13.0, "bounceEnemy": true },
+            { "id": "c_sho_4", "kind": "tile", "xStart": 81, "xEnd": 87, "y": 13.0 },
+            { "id": "c_sho_5", "kind": "tile", "xStart": 93, "xEnd": 98, "y": 13.0 },
+            { "id": "c_ten_1", "kind": "tile", "xStart": 104, "xEnd": 109, "y": 13.0 },
+            { "id": "c_ten_chimney", "kind": "chimney", "xStart": 111, "xEnd": 114, "y": 16.0 },
+            { "id": "c_ten_2", "kind": "tile", "xStart": 116, "xEnd": 122, "y": 19.0 },
+            { "id": "c_ten_3", "kind": "tile", "xStart": 128, "xEnd": 134, "y": 17.0 },
+            { "id": "c_ketsu_1", "kind": "tile", "xStart": 140, "xEnd": 146, "y": 15.0 }
+          ]
+        }
+      },
+      "shardArcs": [
+        { "id": "w1_2_arc_ki_spring", "startX": 11.5, "startY": 3.4, "endX": 16.0, "endY": 5.8, "count": 5, "launchVx": 5.2, "apexHeight": 2.4 },
+        { "id": "w1_2_arc_sho_1", "startX": 50.8, "startY": 3.4, "endX": 56.2, "endY": 7.2, "count": 5, "launchVx": 5.5, "apexHeight": 2.0 },
+        { "id": "w1_2_arc_sho_2", "startX": 65.8, "startY": 3.4, "endX": 71.2, "endY": 8.2, "count": 5, "launchVx": 5.5, "apexHeight": 2.0 },
+        { "id": "w1_2_arc_sho_3", "startX": 81.8, "startY": 3.4, "endX": 87.2, "endY": 8.2, "count": 5, "launchVx": 5.5, "apexHeight": 2.0 },
+        { "id": "w1_2_arc_ketsu_1", "startX": 154.2, "startY": 9.4, "endX": 160.2, "endY": 9.8, "count": 5, "launchVx": 9.2, "apexHeight": 1.6 },
+        { "id": "w1_2_arc_ketsu_2", "startX": 161.2, "startY": 9.8, "endX": 167.2, "endY": 9.4, "count": 5, "launchVx": 9.2, "apexHeight": 1.6 }
+      ],
+      "coins": [
+        { "x": 9.5, "y": 8.8 }, { "x": 11.5, "y": 8.8 }, { "x": 13.5, "y": 8.8 },
+        { "x": 112.5, "y": 6.0 }, { "x": 112.5, "y": 9.5 }, { "x": 112.5, "y": 16.5 },
+        { "x": 159.5, "y": 3.0 }, { "x": 162.5, "y": 3.0 }
+      ],
+      "flagpole": null,
+      "slopeCues": [
+        { "x": 11.5, "y": 12.2, "text": "KI · SPRING ALCOVE (NORMAL vs TIMED [Z] SUPER)", "color": "#22D3EE" },
+        { "x": 61.0, "y": 9.4, "text": "SHŌ · TIMED SPRINGS OVER 3-BLOCK SPIKES", "color": "#F43F5E" },
+        { "x": 112.5, "y": 18.6, "text": "TEN · 3t WALL-JUMP CHIMNEY + RISING LIFT", "color": "#FACC15" },
+        { "x": 161.0, "y": 12.6, "text": "KETSU · 3 OSCILLATING FALL-AWAY -> EXIT PIPE [→]", "color": "#67E8F9" }
+      ]
+    },
+    {
+      "id": "course_1_3",
+      "code": "1-3",
+      "roomName": "1-3: Hydro-Pulse Ridge",
+      "title": "Hydro-Pulse Ridge",
+      "conceptThreeWords": "Hydro Pulse Ridge",
+      "theme": "ridge",
+      "isWorld1Course": true,
+      "kiVisualDemo": true,
+      "twistKind": "horizontal_hydro_jet",
+      "climaxKind": "geyser_pinnacle_medallion",
+      "cols": 208,
+      "rows": 26,
+      "spawnX": 3.0,
+      "spawnY": 2.5,
+      "floorBaselineY": 2.0,
+      "initialPowerUp": "super",
+      "description": "Course 1-3 (Hydro-Pulse Ridge): High-altitude alpine ridges with safe Ki vertical geyser to stone bridge, Shō 3.0s pulsing hydraulic spouts over chasms, Ten horizontal geyser jets propelling at vx = 14.0 t/s across a massive spike abyss requiring exit flutter jump, and Ketsu climax geyser elevator to highest Pinnacle Goal Medallion.",
+      "perLevelGimmick": {
+        "id": "hydro_pulse_geysers",
+        "name": "Pulsing & Horizontal Hydro-Geysers",
+        "summary": "3.0s cyclic hydraulic water spouts and vx=14.0 t/s horizontal water jets layered atop invariant Wonder kinematics."
+      },
+      "acts": [
+        {
+          "id": "KI",
+          "xStart": 1,
+          "xEnd": 42,
+          "spawnX": 3.0,
+          "spawnY": 2.5,
+          "signpostY": 2.0,
+          "safetyGuarantee": "100% solid ridge floor; zero pits, zero hazards; safe vertical geyser lifts to stone bridge"
+        },
+        {
+          "id": "SHO",
+          "xStart": 43,
+          "xEnd": 102,
+          "spawnX": 44.0,
+          "spawnY": 5.5,
+          "signpostY": 5.0,
+          "safetyGuarantee": "3.0-second cyclic hydraulic water spouts over alpine chasms with safeguard islands"
+        },
+        {
+          "id": "TEN",
+          "xStart": 103,
+          "xEnd": 154,
+          "spawnX": 104.5,
+          "spawnY": 5.5,
+          "signpostY": 5.0,
+          "safetyGuarantee": "Horizontal Geyser Jets (vx = 14.0 t/s) across massive 23-tile spike abyss with exit flutter jump"
+        },
+        {
+          "id": "KETSU",
+          "xStart": 155,
+          "xEnd": 206,
+          "spawnX": 156.5,
+          "spawnY": 4.5,
+          "signpostY": 4.0,
+          "safetyGuarantee": "Climax Geyser Elevator ascending to the highest alpine Pinnacle Goal Medallion"
+        }
+      ],
+      "tileRects": [
+        { "x": 1, "y": 0, "w": 42, "h": 2, "type": "SOLID" },
+        { "x": 17, "y": 6, "w": 17, "h": 1, "type": "SOLID" },
+        { "x": 36, "y": 2, "w": 7, "h": 3, "type": "SOLID" },
+
+        { "x": 43, "y": 0, "w": 6, "h": 5, "type": "SOLID" },
+        { "x": 59, "y": 0, "w": 8, "h": 5, "type": "SOLID" },
+        { "x": 79, "y": 0, "w": 10, "h": 5, "type": "SOLID" },
+        { "x": 85, "y": 7, "w": 4, "h": 1, "type": "SOLID" },
+        { "x": 88, "y": 5, "w": 1, "h": 2, "type": "SOLID" },
+        { "x": 97, "y": 0, "w": 13, "h": 5, "type": "SOLID" },
+
+        { "x": 46, "y": 10, "w": 5, "h": 1, "type": "SOLID" },
+        { "x": 57, "y": 10, "w": 6, "h": 1, "type": "SOLID" },
+        { "x": 69, "y": 11, "w": 6, "h": 1, "type": "SOLID" },
+        { "x": 81, "y": 11, "w": 6, "h": 1, "type": "SOLID" },
+        { "x": 93, "y": 11, "w": 6, "h": 1, "type": "SOLID" },
+
+        { "x": 110, "y": 0, "w": 24, "h": 1, "type": "SOLID" },
+        { "x": 111, "y": 1, "w": 23, "h": 1, "type": "HAZARD" },
+        { "x": 134, "y": 0, "w": 11, "h": 4, "type": "SOLID" },
+        { "x": 145, "y": 0, "w": 10, "h": 1, "type": "SOLID" },
+        { "x": 145, "y": 1, "w": 10, "h": 1, "type": "HAZARD" },
+        { "x": 105, "y": 11, "w": 5, "h": 1, "type": "SOLID" },
+        { "x": 116, "y": 11, "w": 6, "h": 1, "type": "SOLID" },
+        { "x": 122, "y": 15, "w": 1, "h": 5, "type": "SOLID" },
+        { "x": 128, "y": 11, "w": 6, "h": 1, "type": "SOLID" },
+        { "x": 140, "y": 11, "w": 5, "h": 1, "type": "SOLID" },
+
+        { "x": 155, "y": 0, "w": 4, "h": 4, "type": "SOLID" },
+        { "x": 159, "y": 0, "w": 5, "h": 1, "type": "SOLID" },
+        { "x": 164, "y": 0, "w": 2, "h": 4, "type": "SOLID" },
+        { "x": 186, "y": 0, "w": 16, "h": 16, "type": "SOLID" },
+        { "x": 191, "y": 16, "w": 3, "h": 1, "type": "HARD_BLOCK" }
+      ],
+      "singleTiles": [
+        { "x": 22, "y": 9, "type": "QUESTION_BLOCK" },
+        { "x": 24, "y": 9, "type": "QUESTION_BLOCK" },
+        { "x": 62, "y": 8, "type": "QUESTION_BLOCK" },
+        { "x": 83, "y": 8, "type": "QUESTION_BLOCK" },
+        { "x": 85, "y": 5, "type": "BRICK_BLOCK" },
+        { "x": 85, "y": 6, "type": "BRICK_BLOCK" },
+        { "x": 107, "y": 8, "type": "QUESTION_BLOCK" }
+      ],
+      "powerUpBlocks": [
+        { "col": 22, "row": 9, "item": "adaptive_powerup" },
+        { "col": 83, "row": 8, "item": "fire_flower" }
+      ],
+      "enemies": [
+        { "kind": "sproutling", "x": 26.0, "y": 7.0, "dir": -1, "turnAtLedges": true },
+        { "kind": "sproutling", "x": 63.0, "y": 5.0, "dir": -1, "turnAtLedges": true },
+        { "kind": "hoplite", "x": 81.8, "y": 5.0, "dir": -1, "turnAtLedges": true },
+        { "kind": "sproutling", "x": 139.0, "y": 4.0, "dir": -1, "turnAtLedges": true },
+        { "kind": "hoplite", "x": 157.0, "y": 4.0, "dir": -1, "turnAtLedges": true }
+      ],
+      "geysers": [
+        {
+          "id": "ridge_ki_geyser_1",
+          "actId": "KI",
+          "x": 12.2,
+          "baseY": 2.0,
+          "width": 3.0,
+          "minHeight": 1.4,
+          "maxHeight": 5.6,
+          "periodSec": 3.0,
+          "phase": 0.15,
+          "pulsing": true,
+          "demoVisual": true,
+          "invertible": false
+        },
+        {
+          "id": "ridge_sho_geyser_1",
+          "actId": "SHO",
+          "x": 50.2,
+          "baseY": 0.5,
+          "width": 2.8,
+          "minHeight": 1.6,
+          "maxHeight": 6.4,
+          "periodSec": 3.0,
+          "phase": 0.0,
+          "pulsing": true,
+          "invertible": false
+        },
+        {
+          "id": "ridge_sho_geyser_2",
+          "actId": "SHO",
+          "x": 54.6,
+          "baseY": 0.5,
+          "width": 2.8,
+          "minHeight": 1.6,
+          "maxHeight": 6.8,
+          "periodSec": 3.0,
+          "phase": 0.45,
+          "pulsing": true,
+          "invertible": false
+        },
+        {
+          "id": "ridge_sho_geyser_3",
+          "actId": "SHO",
+          "x": 68.4,
+          "baseY": 0.5,
+          "width": 2.8,
+          "minHeight": 1.6,
+          "maxHeight": 6.8,
+          "periodSec": 3.0,
+          "phase": 0.12,
+          "pulsing": true,
+          "invertible": false
+        },
+        {
+          "id": "ridge_sho_geyser_4",
+          "actId": "SHO",
+          "x": 73.6,
+          "baseY": 0.5,
+          "width": 2.8,
+          "minHeight": 1.6,
+          "maxHeight": 7.0,
+          "periodSec": 3.0,
+          "phase": 0.58,
+          "pulsing": true,
+          "invertible": false
+        },
+        {
+          "id": "ridge_sho_geyser_5",
+          "actId": "SHO",
+          "x": 89.2,
+          "baseY": 0.5,
+          "width": 2.8,
+          "minHeight": 1.6,
+          "maxHeight": 6.8,
+          "periodSec": 3.0,
+          "phase": 0.22,
+          "pulsing": true,
+          "invertible": false
+        },
+        {
+          "id": "ridge_sho_geyser_6",
+          "actId": "SHO",
+          "x": 93.4,
+          "baseY": 0.5,
+          "width": 2.8,
+          "minHeight": 1.6,
+          "maxHeight": 6.8,
+          "periodSec": 3.0,
+          "phase": 0.68,
+          "pulsing": true,
+          "invertible": false
+        },
+        {
+          "id": "ridge_ketsu_step_1",
+          "actId": "KETSU",
+          "x": 167.5,
+          "baseY": 0.5,
+          "width": 3.0,
+          "minHeight": 2.4,
+          "maxHeight": 7.4,
+          "periodSec": 3.0,
+          "phase": 0.0,
+          "pulsing": true,
+          "invertible": true
+        },
+        {
+          "id": "ridge_ketsu_step_2",
+          "actId": "KETSU",
+          "x": 173.2,
+          "baseY": 0.5,
+          "width": 3.0,
+          "minHeight": 3.4,
+          "maxHeight": 10.6,
+          "periodSec": 3.0,
+          "phase": 0.35,
+          "pulsing": true,
+          "invertible": true
+        },
+        {
+          "id": "ridge_ketsu_elevator",
+          "actId": "KETSU",
+          "x": 180.0,
+          "baseY": 0.5,
+          "width": 3.4,
+          "minHeight": 5.0,
+          "maxHeight": 16.5,
+          "periodSec": 3.6,
+          "phase": 0.2,
+          "pulsing": true,
+          "invertible": false,
+          "label": "CLIMAX ELEVATOR"
+        }
+      ],
+      "horizontalJets": [
+        {
+          "id": "ridge_ten_jet_abyss",
+          "actId": "TEN",
+          "x": 109.5,
+          "y": 5.0,
+          "length": 13.5,
+          "height": 2.5,
+          "dir": 1,
+          "jetSpeed": 14.0,
+          "liftVy": 2.2,
+          "alwaysActive": true,
+          "label": "HYDRO JET · 14.0 t/s"
+        },
+        {
+          "id": "ridge_ten_jet_cleft",
+          "actId": "TEN",
+          "x": 144.2,
+          "y": 4.2,
+          "length": 6.8,
+          "height": 2.4,
+          "dir": 1,
+          "jetSpeed": 14.0,
+          "liftVy": 2.2,
+          "alwaysActive": true,
+          "label": "HYDRO BOOST · 14.0 t/s"
+        }
+      ],
+      "propPlatforms": [
+        {
+          "id": "ridge_antiphase_a",
+          "mode": "sine",
+          "startX": 135.5,
+          "startY": 7.0,
+          "endX": 135.5,
+          "endY": 10.2,
+          "periodSec": 3.0,
+          "phase": 0.0,
+          "width": 2.6,
+          "height": 0.45,
+          "oneWay": true,
+          "antiPhaseGroup": "ridge_ten"
+        },
+        {
+          "id": "ridge_antiphase_b",
+          "mode": "sine",
+          "startX": 140.0,
+          "startY": 7.0,
+          "endX": 140.0,
+          "endY": 10.2,
+          "periodSec": 3.0,
+          "phase": 0.5,
+          "width": 2.6,
+          "height": 0.45,
+          "oneWay": true,
+          "antiPhaseGroup": "ridge_ten"
+        },
+        {
+          "id": "ridge_secret_fallaway",
+          "mode": "fall_away",
+          "startX": 159.0,
+          "startY": 3.5,
+          "width": 5.0,
+          "height": 0.5,
+          "oneWay": false,
+          "label": "SECRET DROP"
+        }
+      ],
+      "springs": [
+        { "id": "ridge_secret_spring", "x": 162.5, "y": 1.0, "label": "ESCAPE" }
+      ],
+      "warpTubes": [],
+      "twistHerald": {
+        "id": "ridge_ten_herald",
+        "x": 105.0,
+        "baseY": 5.0,
+        "height": 5.2,
+        "label": "TEN · HORIZONTAL HYDRO-JETS",
+        "anticipationRangeTiles": 6.5
+      },
+      "pinnacleGoal": {
+        "id": "ridge_pinnacle_medallion",
+        "x": 192.5,
+        "y": 20.2,
+        "radius": 1.05,
+        "label": "PINNACLE GOAL MEDALLION"
+      },
+      "starMedallions": [
+        { "id": "w1_3_star1", "slotIndex": 0, "x": 86.7, "y": 5.9, "actId": "SHO", "route": "observation", "archetype": "observation", "hint": "Kick Hoplite shell through brick gate" },
+        { "id": "w1_3_star2", "slotIndex": 1, "x": 118.5, "y": 20.4, "actId": "TEN", "route": "ceiling", "archetype": "execution", "hint": "Sprint >= 9.20 t/s ceiling route + wall-jump" },
+        { "id": "w1_3_star3", "slotIndex": 2, "x": 160.6, "y": 2.0, "actId": "KETSU", "route": "secret", "archetype": "risk_secret", "hint": "Drop beneath fall-away platform into crevice" }
+      ],
+      "secretCaches": [
+        { "id": "w1_3_1up", "x": 84.0, "y": 13.5, "actId": "SHO", "route": "ceiling", "rewardType": "1UP" }
+      ],
+      "safeguardLedges": [
+        { "id": "sg_ridge_bridge", "x": 17, "y": 7.0, "telegraphFrames": 36, "purpose": "Safe Act 1 stone bridge over solid floor teaches vertical geyser lift" },
+        { "id": "sg_ridge_jet_deck", "x": 97, "y": 5.0, "telegraphFrames": 36, "purpose": "Wide alpine staging deck frames Horizontal Hydro-Jet before spike abyss" }
+      ],
+      "routes": {
+        "floor": {
+          "segments": [
+            { "id": "f_ki_floor", "xStart": 1, "xEnd": 12.2, "y": 2.0 },
+            { "id": "f_ki_g1", "xStart": 12.2, "xEnd": 15.2, "y": 5.0 },
+            { "id": "f_ki_bridge", "xStart": 17, "xEnd": 34, "y": 7.0 },
+            { "id": "f_ki_step", "xStart": 36, "xEnd": 49, "y": 5.0 },
+            { "id": "f_sho_g1", "xStart": 50.2, "xEnd": 53.0, "y": 6.4 },
+            { "id": "f_sho_g2", "xStart": 54.6, "xEnd": 57.4, "y": 6.8 },
+            { "id": "f_sho_i1", "xStart": 59, "xEnd": 67, "y": 5.0 },
+            { "id": "f_sho_g3", "xStart": 68.4, "xEnd": 71.2, "y": 6.8 },
+            { "id": "f_sho_g4", "xStart": 73.6, "xEnd": 76.4, "y": 7.0 },
+            { "id": "f_sho_i2", "xStart": 79, "xEnd": 89, "y": 5.0 },
+            { "id": "f_sho_g5", "xStart": 89.2, "xEnd": 92.0, "y": 6.8 },
+            { "id": "f_sho_g6", "xStart": 93.4, "xEnd": 96.2, "y": 6.8 },
+            { "id": "f_ten_stage", "xStart": 97, "xEnd": 110, "y": 5.0 },
+            { "id": "f_ten_jet_mid", "xStart": 110, "xEnd": 131, "y": 6.5 },
+            { "id": "f_ten_far", "xStart": 134, "xEnd": 145, "y": 4.0 },
+            { "id": "f_ten_jet2", "xStart": 145, "xEnd": 153, "y": 5.2 },
+            { "id": "f_ketsu_base", "xStart": 155, "xEnd": 166, "y": 4.0 },
+            { "id": "f_ketsu_g1", "xStart": 167.5, "xEnd": 170.5, "y": 7.0 },
+            { "id": "f_ketsu_g2", "xStart": 173.2, "xEnd": 176.2, "y": 10.0 },
+            { "id": "f_ketsu_elev1", "xStart": 180.0, "xEnd": 183.4, "y": 11.0 },
+            { "id": "f_ketsu_elev_mid", "xStart": 180.0, "xEnd": 183.4, "y": 13.5 },
+            { "id": "f_ketsu_elev2", "xStart": 180.0, "xEnd": 183.4, "y": 16.0 },
+            { "id": "f_ketsu_pinnacle", "xStart": 186, "xEnd": 202, "y": 16.0 }
+          ]
+        },
+        "ceiling": {
+          "segments": [
+            { "id": "c_sho_1", "kind": "tile", "xStart": 46, "xEnd": 51, "y": 11.0 },
+            { "id": "c_sho_2", "kind": "tile", "xStart": 57, "xEnd": 63, "y": 11.0 },
+            { "id": "c_sho_3", "kind": "tile", "xStart": 69, "xEnd": 75, "y": 12.0, "bounceEnemy": true },
+            { "id": "c_sho_4", "kind": "tile", "xStart": 81, "xEnd": 87, "y": 12.0 },
+            { "id": "c_sho_5", "kind": "tile", "xStart": 93, "xEnd": 99, "y": 12.0 },
+            { "id": "c_ten_1", "kind": "tile", "xStart": 105, "xEnd": 110, "y": 12.0 },
+            { "id": "c_ten_2", "kind": "tile", "xStart": 116, "xEnd": 122, "y": 12.0 },
+            { "id": "c_ten_3", "kind": "tile", "xStart": 128, "xEnd": 134, "y": 12.0 },
+            { "id": "c_ten_4", "kind": "tile", "xStart": 140, "xEnd": 145, "y": 12.0 }
+          ]
+        }
+      },
+      "shardArcs": [
+        { "id": "w1_3_arc_ki_bridge", "startX": 14.5, "startY": 7.6, "endX": 19.4, "endY": 8.0, "count": 5, "launchVx": 5.2, "apexHeight": 1.6 },
+        { "id": "w1_3_arc_sho_1", "startX": 51.8, "startY": 7.4, "endX": 56.6, "endY": 7.6, "count": 5, "launchVx": 5.2, "apexHeight": 1.6 },
+        { "id": "w1_3_arc_sho_2", "startX": 70.0, "startY": 7.8, "endX": 75.2, "endY": 7.8, "count": 5, "launchVx": 5.2, "apexHeight": 1.6 },
+        { "id": "w1_3_arc_ten_flutter", "startX": 122.0, "startY": 6.6, "endX": 133.2, "endY": 5.4, "count": 6, "launchVx": 14.0, "apexHeight": 2.0 },
+        { "id": "w1_3_arc_ketsu_summit", "startX": 182.4, "startY": 16.5, "endX": 187.8, "endY": 16.8, "count": 5, "launchVx": 6.5, "apexHeight": 2.0 }
+      ],
+      "coins": [
+        { "x": 28.0, "y": 8.0 }, { "x": 30.0, "y": 8.0 },
+        { "x": 114.0, "y": 6.6 }, { "x": 118.0, "y": 6.6 },
+        { "x": 159.6, "y": 2.0 }, { "x": 161.6, "y": 2.0 },
+        { "x": 181.7, "y": 12.0 }, { "x": 181.7, "y": 15.0 }, { "x": 196.0, "y": 17.6 }
+      ],
+      "flagpole": null,
+      "slopeCues": [
+        { "x": 14.0, "y": 9.6, "text": "KI · SAFE VERTICAL GEYSER -> STONE BRIDGE", "color": "#38BDF8" },
+        { "x": 63.0, "y": 9.8, "text": "SHŌ · 3.0s PULSING HYDRO-SPOUTS", "color": "#67E8F9" },
+        { "x": 122.0, "y": 9.8, "text": "TEN · HYDRO JET (14.0 t/s) + HOLD [Z] FLUTTER AT EXIT!", "color": "#FDE047" },
+        { "x": 187.5, "y": 20.6, "text": "KETSU · CLIMAX ELEVATOR -> PINNACLE MEDALLION", "color": "#FACC15" }
+      ]
+    }
+  ]
+}

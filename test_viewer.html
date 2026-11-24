@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Mario & Luigi - 3D Web Asset Viewer (27 Animations)</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    body {
+      background-color: #12141a;
+      color: #e0e6ed;
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+    }
+    #canvas-container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    #ui-overlay {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      bottom: 16px;
+      z-index: 10;
+      background: rgba(22, 27, 34, 0.92);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 14px;
+      padding: 18px;
+      width: 360px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+    }
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .badge {
+      font-size: 0.7rem;
+      background: #e52521;
+      color: white;
+      padding: 2px 7px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+    .badge.luigi {
+      background: #009624;
+    }
+    .section-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #8b949e;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-weight: 700;
+    }
+    .btn-group {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+    button {
+      flex: 1;
+      padding: 7px 10px;
+      background: #21262d;
+      border: 1px solid #30363d;
+      color: #c9d1d9;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    button:hover {
+      background: #30363d;
+      border-color: #8b949e;
+      color: #fff;
+    }
+    button.active {
+      background: #238636;
+      border-color: #2ea043;
+      color: #fff;
+    }
+    button.mario-active {
+      background: #da3633;
+      border-color: #f85149;
+      color: #fff;
+    }
+    #anim-scroll {
+      flex: 1;
+      overflow-y: auto;
+      padding-right: 4px;
+      margin-top: 4px;
+      margin-bottom: 8px;
+    }
+    #anim-scroll::-webkit-scrollbar {
+      width: 6px;
+    }
+    #anim-scroll::-webkit-scrollbar-thumb {
+      background: #30363d;
+      border-radius: 3px;
+    }
+    .category-group {
+      margin-bottom: 10px;
+    }
+    .category-title {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      color: #58a6ff;
+      font-weight: 700;
+      margin-bottom: 4px;
+      letter-spacing: 0.05em;
+    }
+    .anim-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
+    }
+    .slider-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.78rem;
+      color: #8b949e;
+    }
+    .slider-row input {
+      flex: 1;
+    }
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      margin-top: 6px;
+      color: #c9d1d9;
+      cursor: pointer;
+    }
+    #stats-box {
+      margin-top: 8px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.72rem;
+      color: #8b949e;
+      line-height: 1.5;
+    }
+    #loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 20;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      pointer-events: none;
+      background: rgba(0, 0, 0, 0.75);
+      padding: 14px 28px;
+      border-radius: 8px;
+      display: none;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+  <div id="loading">Loading model & 27 animations...</div>
+  <div id="canvas-container"></div>
+
+  <div id="ui-overlay">
+    <div class="header-row">
+      <h1>
+        <span>Mario & Luigi</span>
+        <span id="char-badge" class="badge luigi">Luigi</span>
+      </h1>
+      <span style="font-size: 0.72rem; color: #8b949e;">27 Tracks</span>
+    </div>
+
+    <div class="section-label">Select Character</div>
+    <div class="btn-group">
+      <button id="btn-luigi" class="active" onclick="switchCharacter('luigi')">Luigi</button>
+      <button id="btn-mario" onclick="switchCharacter('mario')">Mario</button>
+    </div>
+
+    <div class="section-label">Animation Clips (Click to Play)</div>
+    <div id="anim-scroll">
+      <!-- Locomotion -->
+      <div class="category-group">
+        <div class="category-title">Locomotion</div>
+        <div class="anim-grid">
+          <button id="anim-Idle" class="active" onclick="playAnim('Idle')">Idle</button>
+          <button id="anim-Walk" onclick="playAnim('Walk')">Walk</button>
+          <button id="anim-Run" onclick="playAnim('Run')">Run</button>
+          <button id="anim-Sprint" onclick="playAnim('Sprint')">Sprint (B-Dash)</button>
+          <button id="anim-Skid" onclick="playAnim('Skid')">Skid / Hard Stop</button>
+          <button id="anim-TurnAround" onclick="playAnim('TurnAround')">Turn Around</button>
+        </div>
+      </div>
+
+      <!-- Jumping & Acrobatics -->
+      <div class="category-group">
+        <div class="category-title">Jumping & Acrobatics</div>
+        <div class="anim-grid">
+          <button id="anim-Jump" onclick="playAnim('Jump')">Jump 1</button>
+          <button id="anim-DoubleJump" onclick="playAnim('DoubleJump')">Double Jump</button>
+          <button id="anim-TripleJump" onclick="playAnim('TripleJump')">Triple Jump</button>
+          <button id="anim-FlutterJump" onclick="playAnim('FlutterJump')">Flutter (Air Run)</button>
+          <button id="anim-SpinJump" onclick="playAnim('SpinJump')">Spin Jump</button>
+          <button id="anim-SpinAir" onclick="playAnim('SpinAir')">Spin Air Loop</button>
+          <button id="anim-WallSlide" onclick="playAnim('WallSlide')">Wall Slide</button>
+          <button id="anim-WallJump" onclick="playAnim('WallJump')">Wall Jump</button>
+        </div>
+      </div>
+
+      <!-- Combat & Attacks -->
+      <div class="category-group">
+        <div class="category-title">Combat & Attacks</div>
+        <div class="anim-grid">
+          <button id="anim-Fireball" onclick="playAnim('Fireball')">Fireball (Ground)</button>
+          <button id="anim-FireballAir" onclick="playAnim('FireballAir')">Fireball (Air)</button>
+          <button id="anim-GroundPound" onclick="playAnim('GroundPound')">Ground Pound</button>
+          <button id="anim-GroundPoundLand" onclick="playAnim('GroundPoundLand')">GP Slam Impact</button>
+        </div>
+      </div>
+
+      <!-- Mechanics & Reactions -->
+      <div class="category-group">
+        <div class="category-title">Mechanics & Reactions</div>
+        <div class="anim-grid">
+          <button id="anim-CrouchStart" onclick="playAnim('CrouchStart')">Crouch Start</button>
+          <button id="anim-Crouch" onclick="playAnim('Crouch')">Crouch Hold</button>
+          <button id="anim-CarryWalk" onclick="playAnim('CarryWalk')">Carry Walk</button>
+          <button id="anim-Throw" onclick="playAnim('Throw')">Throw Shell</button>
+          <button id="anim-Climb" onclick="playAnim('Climb')">Climb Pole</button>
+          <button id="anim-Swim" onclick="playAnim('Swim')">Swim</button>
+          <button id="anim-Damage" onclick="playAnim('Damage')">Damage Hit</button>
+          <button id="anim-Defeat" onclick="playAnim('Defeat')">Defeat / Fall</button>
+          <button id="anim-Victory" onclick="playAnim('Victory')">Victory Flag</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label">Speed (<span id="speed-val">1.0</span>x)</div>
+    <div class="slider-row">
+      <input type="range" id="speed-slider" min="0.1" max="2.0" step="0.1" value="1.0" oninput="setSpeed(this.value)">
+    </div>
+
+    <div class="section-label">Display Options</div>
+    <div style="display: flex; gap: 14px;">
+      <label class="checkbox-row">
+        <input type="checkbox" id="chk-wire" onchange="toggleWireframe(this.checked)"> Wireframe
+      </label>
+      <label class="checkbox-row">
+        <input type="checkbox" id="chk-bones" onchange="toggleSkeleton(this.checked)"> Skeleton Rig
+      </label>
+    </div>
+
+    <div id="stats-box">
+      <div>Model: <b id="stat-model">luigi.glb</b> (<span id="stat-size">~678 KB</span>)</div>
+      <div>Active Track: <b id="stat-clip" style="color: #58a6ff;">Idle</b></div>
+      <div>Tracks Available: <b>27 NLA Tracks</b></div>
+      <div>Format: <b>glTF 2.0 Binary (.glb)</b></div>
+    </div>
+  </div>
+
+  <script>
+    let scene, camera, renderer, controls;
+    let currentModel = null;
+    let mixer = null;
+    let skeletonHelper = null;
+    const actions = {};
+    let activeAction = null;
+    let currentChar = 'luigi';
+    let isWireframe = false;
+
+    const loader = new THREE.GLTFLoader();
+    const clock = new THREE.Clock();
+
+    const allAnimNames = [
+      'Idle', 'Walk', 'Run', 'Sprint', 'Skid', 'TurnAround',
+      'Jump', 'DoubleJump', 'TripleJump', 'FlutterJump', 'SpinJump', 'SpinAir', 'WallSlide', 'WallJump',
+      'Fireball', 'FireballAir', 'GroundPound', 'GroundPoundLand',
+      'CrouchStart', 'Crouch', 'CarryWalk', 'Throw', 'Climb', 'Swim', 'Damage', 'Defeat', 'Victory'
+    ];
+
+    function init() {
+      const container = document.getElementById('canvas-container');
+
+      scene = new THREE.Scene();
+      scene.background = new THREE.Color(0x181c24);
+
+      const grid = new THREE.GridHelper(60, 60, 0x30363d, 0x21262d);
+      grid.position.y = 0;
+      scene.add(grid);
+
+      const ambientLight = new THREE.AmbientLight(0xffffff, 1.25);
+      scene.add(ambientLight);
+
+      const dirLight1 = new THREE.DirectionalLight(0xffffff, 1.4);
+      dirLight1.position.set(15, 30, 20);
+      dirLight1.castShadow = true;
+      scene.add(dirLight1);
+
+      const dirLight2 = new THREE.DirectionalLight(0x7fb3d5, 0.65);
+      dirLight2.position.set(-15, 10, -20);
+      scene.add(dirLight2);
+
+      camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+      camera.position.set(0, 18, 45);
+
+      renderer = new THREE.WebGLRenderer({ antialias: true });
+      renderer.setPixelRatio(window.devicePixelRatio);
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.outputEncoding = THREE.sRGBEncoding;
+      renderer.shadowMap.enabled = true;
+      container.appendChild(renderer.domElement);
+
+      controls = new THREE.OrbitControls(camera, renderer.domElement);
+      controls.target.set(0, 10, 0);
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.05;
+      controls.update();
+
+      window.addEventListener('resize', onWindowResize, false);
+
+      loadCharacter('luigi');
+      animate();
+    }
+
+    function onWindowResize() {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+
+    function showLoading(show) {
+      document.getElementById('loading').style.display = show ? 'block' : 'none';
+    }
+
+    function loadCharacter(name) {
+      showLoading(true);
+      if (currentModel) {
+        scene.remove(currentModel);
+        currentModel = null;
+      }
+      if (skeletonHelper) {
+        scene.remove(skeletonHelper);
+        skeletonHelper = null;
+      }
+      for (const k in actions) delete actions[k];
+
+      const modelPath = 'models/' + name + '.glb';
+      loader.load(
+        modelPath,
+        function(gltf) {
+          showLoading(false);
+          currentModel = gltf.scene;
+          scene.add(currentModel);
+
+          mixer = new THREE.AnimationMixer(currentModel);
+
+          gltf.animations.forEach(clip => {
+            const act = mixer.clipAction(clip);
+            actions[clip.name] = act;
+          });
+
+          skeletonHelper = new THREE.SkeletonHelper(currentModel);
+          skeletonHelper.visible = document.getElementById('chk-bones').checked;
+          scene.add(skeletonHelper);
+
+          applyWireframe(isWireframe);
+          document.getElementById('stat-model').innerText = name + '.glb';
+
+          playAnim('Idle');
+        },
+        undefined,
+        function(err) {
+          showLoading(false);
+          console.error('Error loading GLB:', err);
+          alert('Failed to load ' + modelPath + '. Please run a static server like: python -m http.server 8080 --directory web_assets');
+        }
+      );
+    }
+
+    function switchCharacter(name) {
+      currentChar = name;
+      document.getElementById('btn-luigi').className = (name === 'luigi') ? 'active' : '';
+      document.getElementById('btn-mario').className = (name === 'mario') ? 'mario-active' : '';
+
+      const badge = document.getElementById('char-badge');
+      badge.innerText = name.charAt(0).toUpperCase() + name.slice(1);
+      badge.className = 'badge ' + (name === 'luigi' ? 'luigi' : '');
+
+      loadCharacter(name);
+    }
+
+    function playAnim(name) {
+      const targetAction = actions[name];
+      if (!targetAction) {
+        console.warn('Action not found:', name);
+        return;
+      }
+
+      allAnimNames.forEach(anim => {
+        const btn = document.getElementById('anim-' + anim);
+        if (btn) btn.className = (anim === name) ? (currentChar === 'mario' ? 'mario-active' : 'active') : '';
+      });
+
+      if (activeAction !== targetAction) {
+        if (activeAction) {
+          activeAction.fadeOut(0.2);
+        }
+        targetAction.reset().fadeIn(0.2).play();
+        activeAction = targetAction;
+        document.getElementById('stat-clip').innerText = name;
+      }
+    }
+
+    function setSpeed(val) {
+      document.getElementById('speed-val').innerText = parseFloat(val).toFixed(1);
+      if (mixer) {
+        mixer.timeScale = parseFloat(val);
+      }
+    }
+
+    function applyWireframe(val) {
+      isWireframe = val;
+      if (currentModel) {
+        currentModel.traverse(child => {
+          if (child.isMesh && child.material) {
+            if (Array.isArray(child.material)) {
+              child.material.forEach(m => m.wireframe = val);
+            } else {
+              child.material.wireframe = val;
+            }
+          }
+        });
+      }
+    }
+
+    function toggleWireframe(val) {
+      applyWireframe(val);
+    }
+
+    function toggleSkeleton(val) {
+      if (skeletonHelper) {
+        skeletonHelper.visible = val;
+      }
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+      const delta = clock.getDelta();
+      if (mixer) mixer.update(delta);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+
+    init();
+  </script>
+</body>
+</html>

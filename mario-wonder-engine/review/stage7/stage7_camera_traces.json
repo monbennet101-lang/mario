@@ -1,0 +1,2734 @@
+{
+  "generatedAt": "2026-11-18T06:50:33.783Z",
+  "summary": {
+    "settledSprintScreenXPercent": 42.22,
+    "settledSprintLookAheadTiles": 3,
+    "settledSprintFovDeg": 32,
+    "flatJumpCameraYDriftTiles": 0,
+    "maxLedgeJumpScreenYPercent": 82.73
+  },
+  "horizSamples": [
+    {
+      "frame": 0,
+      "t": 0,
+      "playerX": 14.005,
+      "camX": 3.403,
+      "lookAhead": 0.002,
+      "screenXPercent": 50.01,
+      "fov": 30
+    },
+    {
+      "frame": 1,
+      "t": 0.0167,
+      "playerX": 14.015,
+      "camX": 3.409,
+      "lookAhead": 0.008,
+      "screenXPercent": 50.03,
+      "fov": 30
+    },
+    {
+      "frame": 2,
+      "t": 0.0333,
+      "playerX": 14.029,
+      "camX": 3.417,
+      "lookAhead": 0.019,
+      "screenXPercent": 50.05,
+      "fov": 30
+    },
+    {
+      "frame": 3,
+      "t": 0.05,
+      "playerX": 14.047,
+      "camX": 3.427,
+      "lookAhead": 0.036,
+      "screenXPercent": 50.09,
+      "fov": 30
+    },
+    {
+      "frame": 4,
+      "t": 0.0667,
+      "playerX": 14.069,
+      "camX": 3.44,
+      "lookAhead": 0.059,
+      "screenXPercent": 50.13,
+      "fov": 30
+    },
+    {
+      "frame": 5,
+      "t": 0.0833,
+      "playerX": 14.096,
+      "camX": 3.455,
+      "lookAhead": 0.089,
+      "screenXPercent": 50.19,
+      "fov": 30
+    },
+    {
+      "frame": 6,
+      "t": 0.1,
+      "playerX": 14.128,
+      "camX": 3.471,
+      "lookAhead": 0.124,
+      "screenXPercent": 50.26,
+      "fov": 30
+    },
+    {
+      "frame": 7,
+      "t": 0.1167,
+      "playerX": 14.163,
+      "camX": 3.489,
+      "lookAhead": 0.165,
+      "screenXPercent": 50.34,
+      "fov": 30
+    },
+    {
+      "frame": 8,
+      "t": 0.1333,
+      "playerX": 14.204,
+      "camX": 3.508,
+      "lookAhead": 0.212,
+      "screenXPercent": 50.43,
+      "fov": 30
+    },
+    {
+      "frame": 9,
+      "t": 0.15,
+      "playerX": 14.248,
+      "camX": 3.529,
+      "lookAhead": 0.263,
+      "screenXPercent": 50.54,
+      "fov": 30
+    },
+    {
+      "frame": 10,
+      "t": 0.1667,
+      "playerX": 14.297,
+      "camX": 3.553,
+      "lookAhead": 0.318,
+      "screenXPercent": 50.65,
+      "fov": 30
+    },
+    {
+      "frame": 11,
+      "t": 0.1833,
+      "playerX": 14.351,
+      "camX": 3.582,
+      "lookAhead": 0.378,
+      "screenXPercent": 50.77,
+      "fov": 30
+    },
+    {
+      "frame": 12,
+      "t": 0.2,
+      "playerX": 14.411,
+      "camX": 3.618,
+      "lookAhead": 0.442,
+      "screenXPercent": 50.88,
+      "fov": 30
+    },
+    {
+      "frame": 13,
+      "t": 0.2167,
+      "playerX": 14.476,
+      "camX": 3.662,
+      "lookAhead": 0.511,
+      "screenXPercent": 50.97,
+      "fov": 30
+    },
+    {
+      "frame": 14,
+      "t": 0.2333,
+      "playerX": 14.547,
+      "camX": 3.715,
+      "lookAhead": 0.583,
+      "screenXPercent": 51.05,
+      "fov": 30
+    },
+    {
+      "frame": 15,
+      "t": 0.25,
+      "playerX": 14.622,
+      "camX": 3.777,
+      "lookAhead": 0.659,
+      "screenXPercent": 51.12,
+      "fov": 30
+    },
+    {
+      "frame": 16,
+      "t": 0.2667,
+      "playerX": 14.703,
+      "camX": 3.849,
+      "lookAhead": 0.739,
+      "screenXPercent": 51.16,
+      "fov": 30
+    },
+    {
+      "frame": 17,
+      "t": 0.2833,
+      "playerX": 14.79,
+      "camX": 3.931,
+      "lookAhead": 0.822,
+      "screenXPercent": 51.18,
+      "fov": 30
+    },
+    {
+      "frame": 18,
+      "t": 0.3,
+      "playerX": 14.881,
+      "camX": 4.023,
+      "lookAhead": 0.907,
+      "screenXPercent": 51.17,
+      "fov": 30
+    },
+    {
+      "frame": 19,
+      "t": 0.3167,
+      "playerX": 14.977,
+      "camX": 4.125,
+      "lookAhead": 0.995,
+      "screenXPercent": 51.15,
+      "fov": 30
+    },
+    {
+      "frame": 20,
+      "t": 0.3333,
+      "playerX": 15.079,
+      "camX": 4.238,
+      "lookAhead": 1.084,
+      "screenXPercent": 51.09,
+      "fov": 30
+    },
+    {
+      "frame": 21,
+      "t": 0.35,
+      "playerX": 15.186,
+      "camX": 4.361,
+      "lookAhead": 1.175,
+      "screenXPercent": 51.02,
+      "fov": 30
+    },
+    {
+      "frame": 22,
+      "t": 0.3667,
+      "playerX": 15.297,
+      "camX": 4.494,
+      "lookAhead": 1.268,
+      "screenXPercent": 50.93,
+      "fov": 30
+    },
+    {
+      "frame": 23,
+      "t": 0.3833,
+      "playerX": 15.414,
+      "camX": 4.636,
+      "lookAhead": 1.361,
+      "screenXPercent": 50.81,
+      "fov": 30
+    },
+    {
+      "frame": 24,
+      "t": 0.4,
+      "playerX": 15.536,
+      "camX": 4.788,
+      "lookAhead": 1.456,
+      "screenXPercent": 50.67,
+      "fov": 30
+    },
+    {
+      "frame": 25,
+      "t": 0.4167,
+      "playerX": 15.663,
+      "camX": 4.949,
+      "lookAhead": 1.551,
+      "screenXPercent": 50.52,
+      "fov": 30
+    },
+    {
+      "frame": 26,
+      "t": 0.4333,
+      "playerX": 15.795,
+      "camX": 5.119,
+      "lookAhead": 1.646,
+      "screenXPercent": 50.34,
+      "fov": 30
+    },
+    {
+      "frame": 27,
+      "t": 0.45,
+      "playerX": 15.931,
+      "camX": 5.297,
+      "lookAhead": 1.743,
+      "screenXPercent": 50.15,
+      "fov": 30
+    },
+    {
+      "frame": 28,
+      "t": 0.4667,
+      "playerX": 16.073,
+      "camX": 5.484,
+      "lookAhead": 1.839,
+      "screenXPercent": 49.95,
+      "fov": 30
+    },
+    {
+      "frame": 29,
+      "t": 0.4833,
+      "playerX": 16.22,
+      "camX": 5.679,
+      "lookAhead": 1.936,
+      "screenXPercent": 49.72,
+      "fov": 30.01
+    },
+    {
+      "frame": 30,
+      "t": 0.5,
+      "playerX": 16.371,
+      "camX": 5.882,
+      "lookAhead": 2.033,
+      "screenXPercent": 49.46,
+      "fov": 30.02
+    },
+    {
+      "frame": 31,
+      "t": 0.5167,
+      "playerX": 16.525,
+      "camX": 6.09,
+      "lookAhead": 2.129,
+      "screenXPercent": 49.17,
+      "fov": 30.04
+    },
+    {
+      "frame": 32,
+      "t": 0.5333,
+      "playerX": 16.678,
+      "camX": 6.302,
+      "lookAhead": 2.221,
+      "screenXPercent": 48.85,
+      "fov": 30.08
+    },
+    {
+      "frame": 33,
+      "t": 0.55,
+      "playerX": 16.831,
+      "camX": 6.516,
+      "lookAhead": 2.309,
+      "screenXPercent": 48.48,
+      "fov": 30.13
+    },
+    {
+      "frame": 34,
+      "t": 0.5667,
+      "playerX": 16.985,
+      "camX": 6.733,
+      "lookAhead": 2.39,
+      "screenXPercent": 48.08,
+      "fov": 30.2
+    },
+    {
+      "frame": 35,
+      "t": 0.5833,
+      "playerX": 17.138,
+      "camX": 6.951,
+      "lookAhead": 2.464,
+      "screenXPercent": 47.65,
+      "fov": 30.28
+    },
+    {
+      "frame": 36,
+      "t": 0.6,
+      "playerX": 17.291,
+      "camX": 7.169,
+      "lookAhead": 2.532,
+      "screenXPercent": 47.21,
+      "fov": 30.38
+    },
+    {
+      "frame": 37,
+      "t": 0.6167,
+      "playerX": 17.445,
+      "camX": 7.387,
+      "lookAhead": 2.592,
+      "screenXPercent": 46.75,
+      "fov": 30.48
+    },
+    {
+      "frame": 38,
+      "t": 0.6333,
+      "playerX": 17.598,
+      "camX": 7.603,
+      "lookAhead": 2.646,
+      "screenXPercent": 46.3,
+      "fov": 30.59
+    },
+    {
+      "frame": 39,
+      "t": 0.65,
+      "playerX": 17.751,
+      "camX": 7.816,
+      "lookAhead": 2.694,
+      "screenXPercent": 45.86,
+      "fov": 30.7
+    },
+    {
+      "frame": 40,
+      "t": 0.6667,
+      "playerX": 17.905,
+      "camX": 8.026,
+      "lookAhead": 2.736,
+      "screenXPercent": 45.43,
+      "fov": 30.81
+    },
+    {
+      "frame": 41,
+      "t": 0.6833,
+      "playerX": 18.058,
+      "camX": 8.232,
+      "lookAhead": 2.772,
+      "screenXPercent": 45.02,
+      "fov": 30.92
+    },
+    {
+      "frame": 42,
+      "t": 0.7,
+      "playerX": 18.211,
+      "camX": 8.435,
+      "lookAhead": 2.804,
+      "screenXPercent": 44.65,
+      "fov": 31.03
+    },
+    {
+      "frame": 43,
+      "t": 0.7167,
+      "playerX": 18.365,
+      "camX": 8.633,
+      "lookAhead": 2.832,
+      "screenXPercent": 44.3,
+      "fov": 31.13
+    },
+    {
+      "frame": 44,
+      "t": 0.7333,
+      "playerX": 18.518,
+      "camX": 8.826,
+      "lookAhead": 2.857,
+      "screenXPercent": 43.98,
+      "fov": 31.23
+    },
+    {
+      "frame": 45,
+      "t": 0.75,
+      "playerX": 18.671,
+      "camX": 9.015,
+      "lookAhead": 2.877,
+      "screenXPercent": 43.69,
+      "fov": 31.32
+    },
+    {
+      "frame": 46,
+      "t": 0.7667,
+      "playerX": 18.825,
+      "camX": 9.2,
+      "lookAhead": 2.896,
+      "screenXPercent": 43.44,
+      "fov": 31.4
+    },
+    {
+      "frame": 47,
+      "t": 0.7833,
+      "playerX": 18.978,
+      "camX": 9.381,
+      "lookAhead": 2.911,
+      "screenXPercent": 43.21,
+      "fov": 31.47
+    },
+    {
+      "frame": 48,
+      "t": 0.8,
+      "playerX": 19.131,
+      "camX": 9.558,
+      "lookAhead": 2.924,
+      "screenXPercent": 43.01,
+      "fov": 31.54
+    },
+    {
+      "frame": 49,
+      "t": 0.8167,
+      "playerX": 19.285,
+      "camX": 9.731,
+      "lookAhead": 2.936,
+      "screenXPercent": 42.84,
+      "fov": 31.6
+    },
+    {
+      "frame": 50,
+      "t": 0.8333,
+      "playerX": 19.438,
+      "camX": 9.9,
+      "lookAhead": 2.945,
+      "screenXPercent": 42.69,
+      "fov": 31.66
+    },
+    {
+      "frame": 51,
+      "t": 0.85,
+      "playerX": 19.591,
+      "camX": 10.067,
+      "lookAhead": 2.954,
+      "screenXPercent": 42.57,
+      "fov": 31.7
+    },
+    {
+      "frame": 52,
+      "t": 0.8667,
+      "playerX": 19.745,
+      "camX": 10.231,
+      "lookAhead": 2.961,
+      "screenXPercent": 42.46,
+      "fov": 31.74
+    },
+    {
+      "frame": 53,
+      "t": 0.8833,
+      "playerX": 19.898,
+      "camX": 10.393,
+      "lookAhead": 2.967,
+      "screenXPercent": 42.38,
+      "fov": 31.78
+    },
+    {
+      "frame": 54,
+      "t": 0.9,
+      "playerX": 20.051,
+      "camX": 10.552,
+      "lookAhead": 2.972,
+      "screenXPercent": 42.31,
+      "fov": 31.81
+    },
+    {
+      "frame": 55,
+      "t": 0.9167,
+      "playerX": 20.205,
+      "camX": 10.71,
+      "lookAhead": 2.976,
+      "screenXPercent": 42.25,
+      "fov": 31.84
+    },
+    {
+      "frame": 56,
+      "t": 0.9333,
+      "playerX": 20.358,
+      "camX": 10.866,
+      "lookAhead": 2.98,
+      "screenXPercent": 42.2,
+      "fov": 31.87
+    },
+    {
+      "frame": 57,
+      "t": 0.95,
+      "playerX": 20.511,
+      "camX": 11.021,
+      "lookAhead": 2.983,
+      "screenXPercent": 42.17,
+      "fov": 31.89
+    },
+    {
+      "frame": 58,
+      "t": 0.9667,
+      "playerX": 20.665,
+      "camX": 11.174,
+      "lookAhead": 2.986,
+      "screenXPercent": 42.14,
+      "fov": 31.9
+    },
+    {
+      "frame": 59,
+      "t": 0.9833,
+      "playerX": 20.818,
+      "camX": 11.327,
+      "lookAhead": 2.988,
+      "screenXPercent": 42.12,
+      "fov": 31.92
+    },
+    {
+      "frame": 60,
+      "t": 1,
+      "playerX": 20.971,
+      "camX": 11.48,
+      "lookAhead": 2.99,
+      "screenXPercent": 42.11,
+      "fov": 31.93
+    },
+    {
+      "frame": 61,
+      "t": 1.0167,
+      "playerX": 21.125,
+      "camX": 11.631,
+      "lookAhead": 2.992,
+      "screenXPercent": 42.1,
+      "fov": 31.94
+    },
+    {
+      "frame": 62,
+      "t": 1.0333,
+      "playerX": 21.278,
+      "camX": 11.783,
+      "lookAhead": 2.993,
+      "screenXPercent": 42.1,
+      "fov": 31.95
+    },
+    {
+      "frame": 63,
+      "t": 1.05,
+      "playerX": 21.431,
+      "camX": 11.933,
+      "lookAhead": 2.994,
+      "screenXPercent": 42.1,
+      "fov": 31.96
+    },
+    {
+      "frame": 64,
+      "t": 1.0667,
+      "playerX": 21.585,
+      "camX": 12.084,
+      "lookAhead": 2.995,
+      "screenXPercent": 42.1,
+      "fov": 31.97
+    },
+    {
+      "frame": 65,
+      "t": 1.0833,
+      "playerX": 21.738,
+      "camX": 12.235,
+      "lookAhead": 2.996,
+      "screenXPercent": 42.1,
+      "fov": 31.97
+    },
+    {
+      "frame": 66,
+      "t": 1.1,
+      "playerX": 21.891,
+      "camX": 12.386,
+      "lookAhead": 2.996,
+      "screenXPercent": 42.11,
+      "fov": 31.98
+    },
+    {
+      "frame": 67,
+      "t": 1.1167,
+      "playerX": 22.045,
+      "camX": 12.536,
+      "lookAhead": 2.997,
+      "screenXPercent": 42.11,
+      "fov": 31.98
+    },
+    {
+      "frame": 68,
+      "t": 1.1333,
+      "playerX": 22.198,
+      "camX": 12.687,
+      "lookAhead": 2.998,
+      "screenXPercent": 42.12,
+      "fov": 31.98
+    },
+    {
+      "frame": 69,
+      "t": 1.15,
+      "playerX": 22.351,
+      "camX": 12.838,
+      "lookAhead": 2.998,
+      "screenXPercent": 42.13,
+      "fov": 31.99
+    },
+    {
+      "frame": 70,
+      "t": 1.1667,
+      "playerX": 22.505,
+      "camX": 12.988,
+      "lookAhead": 2.998,
+      "screenXPercent": 42.13,
+      "fov": 31.99
+    },
+    {
+      "frame": 71,
+      "t": 1.1833,
+      "playerX": 22.658,
+      "camX": 13.139,
+      "lookAhead": 2.999,
+      "screenXPercent": 42.14,
+      "fov": 31.99
+    },
+    {
+      "frame": 72,
+      "t": 1.2,
+      "playerX": 22.811,
+      "camX": 13.291,
+      "lookAhead": 2.999,
+      "screenXPercent": 42.15,
+      "fov": 31.99
+    },
+    {
+      "frame": 73,
+      "t": 1.2167,
+      "playerX": 22.965,
+      "camX": 13.442,
+      "lookAhead": 2.999,
+      "screenXPercent": 42.16,
+      "fov": 31.99
+    },
+    {
+      "frame": 74,
+      "t": 1.2333,
+      "playerX": 23.118,
+      "camX": 13.593,
+      "lookAhead": 2.999,
+      "screenXPercent": 42.16,
+      "fov": 31.99
+    },
+    {
+      "frame": 75,
+      "t": 1.25,
+      "playerX": 23.271,
+      "camX": 13.745,
+      "lookAhead": 2.999,
+      "screenXPercent": 42.17,
+      "fov": 32
+    },
+    {
+      "frame": 76,
+      "t": 1.2667,
+      "playerX": 23.425,
+      "camX": 13.896,
+      "lookAhead": 2.999,
+      "screenXPercent": 42.17,
+      "fov": 32
+    },
+    {
+      "frame": 77,
+      "t": 1.2833,
+      "playerX": 23.578,
+      "camX": 14.048,
+      "lookAhead": 3,
+      "screenXPercent": 42.18,
+      "fov": 32
+    },
+    {
+      "frame": 78,
+      "t": 1.3,
+      "playerX": 23.731,
+      "camX": 14.2,
+      "lookAhead": 3,
+      "screenXPercent": 42.19,
+      "fov": 32
+    },
+    {
+      "frame": 79,
+      "t": 1.3167,
+      "playerX": 23.885,
+      "camX": 14.352,
+      "lookAhead": 3,
+      "screenXPercent": 42.19,
+      "fov": 32
+    },
+    {
+      "frame": 80,
+      "t": 1.3333,
+      "playerX": 24.038,
+      "camX": 14.504,
+      "lookAhead": 3,
+      "screenXPercent": 42.19,
+      "fov": 32
+    },
+    {
+      "frame": 81,
+      "t": 1.35,
+      "playerX": 24.191,
+      "camX": 14.657,
+      "lookAhead": 3,
+      "screenXPercent": 42.2,
+      "fov": 32
+    },
+    {
+      "frame": 82,
+      "t": 1.3667,
+      "playerX": 24.345,
+      "camX": 14.809,
+      "lookAhead": 3,
+      "screenXPercent": 42.2,
+      "fov": 32
+    },
+    {
+      "frame": 83,
+      "t": 1.3833,
+      "playerX": 24.498,
+      "camX": 14.961,
+      "lookAhead": 3,
+      "screenXPercent": 42.21,
+      "fov": 32
+    },
+    {
+      "frame": 84,
+      "t": 1.4,
+      "playerX": 24.651,
+      "camX": 15.114,
+      "lookAhead": 3,
+      "screenXPercent": 42.21,
+      "fov": 32
+    },
+    {
+      "frame": 85,
+      "t": 1.4167,
+      "playerX": 24.805,
+      "camX": 15.267,
+      "lookAhead": 3,
+      "screenXPercent": 42.21,
+      "fov": 32
+    },
+    {
+      "frame": 86,
+      "t": 1.4333,
+      "playerX": 24.958,
+      "camX": 15.419,
+      "lookAhead": 3,
+      "screenXPercent": 42.21,
+      "fov": 32
+    },
+    {
+      "frame": 87,
+      "t": 1.45,
+      "playerX": 25.111,
+      "camX": 15.572,
+      "lookAhead": 3,
+      "screenXPercent": 42.22,
+      "fov": 32
+    },
+    {
+      "frame": 88,
+      "t": 1.4667,
+      "playerX": 25.265,
+      "camX": 15.725,
+      "lookAhead": 3,
+      "screenXPercent": 42.22,
+      "fov": 32
+    },
+    {
+      "frame": 89,
+      "t": 1.4833,
+      "playerX": 25.418,
+      "camX": 15.878,
+      "lookAhead": 3,
+      "screenXPercent": 42.22,
+      "fov": 32
+    },
+    {
+      "frame": 90,
+      "t": 1.5,
+      "playerX": 25.565,
+      "camX": 16.023,
+      "lookAhead": 2.996,
+      "screenXPercent": 42.23,
+      "fov": 32
+    },
+    {
+      "frame": 91,
+      "t": 1.5167,
+      "playerX": 25.7,
+      "camX": 16.161,
+      "lookAhead": 2.981,
+      "screenXPercent": 42.23,
+      "fov": 31.99
+    },
+    {
+      "frame": 92,
+      "t": 1.5333,
+      "playerX": 25.823,
+      "camX": 16.29,
+      "lookAhead": 2.953,
+      "screenXPercent": 42.22,
+      "fov": 31.98
+    },
+    {
+      "frame": 93,
+      "t": 1.55,
+      "playerX": 25.933,
+      "camX": 16.411,
+      "lookAhead": 2.908,
+      "screenXPercent": 42.21,
+      "fov": 31.95
+    },
+    {
+      "frame": 94,
+      "t": 1.5667,
+      "playerX": 26.032,
+      "camX": 16.521,
+      "lookAhead": 2.846,
+      "screenXPercent": 42.22,
+      "fov": 31.91
+    },
+    {
+      "frame": 95,
+      "t": 1.5833,
+      "playerX": 26.118,
+      "camX": 16.621,
+      "lookAhead": 2.766,
+      "screenXPercent": 42.25,
+      "fov": 31.85
+    },
+    {
+      "frame": 96,
+      "t": 1.6,
+      "playerX": 26.192,
+      "camX": 16.709,
+      "lookAhead": 2.67,
+      "screenXPercent": 42.29,
+      "fov": 31.77
+    },
+    {
+      "frame": 97,
+      "t": 1.6167,
+      "playerX": 26.253,
+      "camX": 16.786,
+      "lookAhead": 2.557,
+      "screenXPercent": 42.35,
+      "fov": 31.68
+    },
+    {
+      "frame": 98,
+      "t": 1.6333,
+      "playerX": 26.303,
+      "camX": 16.852,
+      "lookAhead": 2.43,
+      "screenXPercent": 42.42,
+      "fov": 31.58
+    },
+    {
+      "frame": 99,
+      "t": 1.65,
+      "playerX": 26.34,
+      "camX": 16.907,
+      "lookAhead": 2.289,
+      "screenXPercent": 42.5,
+      "fov": 31.47
+    },
+    {
+      "frame": 100,
+      "t": 1.6667,
+      "playerX": 26.365,
+      "camX": 16.952,
+      "lookAhead": 2.136,
+      "screenXPercent": 42.57,
+      "fov": 31.36
+    },
+    {
+      "frame": 101,
+      "t": 1.6833,
+      "playerX": 26.378,
+      "camX": 16.988,
+      "lookAhead": 1.972,
+      "screenXPercent": 42.64,
+      "fov": 31.25
+    },
+    {
+      "frame": 102,
+      "t": 1.7,
+      "playerX": 26.381,
+      "camX": 17.018,
+      "lookAhead": 1.8,
+      "screenXPercent": 42.68,
+      "fov": 31.13
+    },
+    {
+      "frame": 103,
+      "t": 1.7167,
+      "playerX": 26.36,
+      "camX": 17.035,
+      "lookAhead": 1.619,
+      "screenXPercent": 42.67,
+      "fov": 31.02
+    },
+    {
+      "frame": 104,
+      "t": 1.7333,
+      "playerX": 26.334,
+      "camX": 17.048,
+      "lookAhead": 1.43,
+      "screenXPercent": 42.65,
+      "fov": 30.92
+    },
+    {
+      "frame": 105,
+      "t": 1.75,
+      "playerX": 26.301,
+      "camX": 17.053,
+      "lookAhead": 1.238,
+      "screenXPercent": 42.63,
+      "fov": 30.82
+    },
+    {
+      "frame": 106,
+      "t": 1.7667,
+      "playerX": 26.264,
+      "camX": 17.047,
+      "lookAhead": 1.046,
+      "screenXPercent": 42.63,
+      "fov": 30.73
+    },
+    {
+      "frame": 107,
+      "t": 1.7833,
+      "playerX": 26.22,
+      "camX": 17.028,
+      "lookAhead": 0.858,
+      "screenXPercent": 42.64,
+      "fov": 30.64
+    },
+    {
+      "frame": 108,
+      "t": 1.8,
+      "playerX": 26.171,
+      "camX": 16.994,
+      "lookAhead": 0.674,
+      "screenXPercent": 42.69,
+      "fov": 30.56
+    },
+    {
+      "frame": 109,
+      "t": 1.8167,
+      "playerX": 26.116,
+      "camX": 16.945,
+      "lookAhead": 0.495,
+      "screenXPercent": 42.77,
+      "fov": 30.49
+    },
+    {
+      "frame": 110,
+      "t": 1.8333,
+      "playerX": 26.056,
+      "camX": 16.88,
+      "lookAhead": 0.323,
+      "screenXPercent": 42.89,
+      "fov": 30.43
+    },
+    {
+      "frame": 111,
+      "t": 1.85,
+      "playerX": 25.991,
+      "camX": 16.799,
+      "lookAhead": 0.157,
+      "screenXPercent": 43.04,
+      "fov": 30.37
+    },
+    {
+      "frame": 112,
+      "t": 1.8667,
+      "playerX": 25.92,
+      "camX": 16.703,
+      "lookAhead": -0.003,
+      "screenXPercent": 43.23,
+      "fov": 30.32
+    },
+    {
+      "frame": 113,
+      "t": 1.8833,
+      "playerX": 25.844,
+      "camX": 16.593,
+      "lookAhead": -0.157,
+      "screenXPercent": 43.45,
+      "fov": 30.27
+    },
+    {
+      "frame": 114,
+      "t": 1.9,
+      "playerX": 25.763,
+      "camX": 16.47,
+      "lookAhead": -0.306,
+      "screenXPercent": 43.7,
+      "fov": 30.24
+    },
+    {
+      "frame": 115,
+      "t": 1.9167,
+      "playerX": 25.676,
+      "camX": 16.333,
+      "lookAhead": -0.449,
+      "screenXPercent": 43.98,
+      "fov": 30.2
+    },
+    {
+      "frame": 116,
+      "t": 1.9333,
+      "playerX": 25.584,
+      "camX": 16.185,
+      "lookAhead": -0.587,
+      "screenXPercent": 44.28,
+      "fov": 30.17
+    },
+    {
+      "frame": 117,
+      "t": 1.95,
+      "playerX": 25.488,
+      "camX": 16.026,
+      "lookAhead": -0.721,
+      "screenXPercent": 44.6,
+      "fov": 30.15
+    },
+    {
+      "frame": 118,
+      "t": 1.9667,
+      "playerX": 25.386,
+      "camX": 15.856,
+      "lookAhead": -0.85,
+      "screenXPercent": 44.94,
+      "fov": 30.12
+    },
+    {
+      "frame": 119,
+      "t": 1.9833,
+      "playerX": 25.279,
+      "camX": 15.677,
+      "lookAhead": -0.976,
+      "screenXPercent": 45.3,
+      "fov": 30.1
+    },
+    {
+      "frame": 120,
+      "t": 2,
+      "playerX": 25.167,
+      "camX": 15.489,
+      "lookAhead": -1.098,
+      "screenXPercent": 45.67,
+      "fov": 30.09
+    },
+    {
+      "frame": 121,
+      "t": 2.0167,
+      "playerX": 25.05,
+      "camX": 15.294,
+      "lookAhead": -1.217,
+      "screenXPercent": 46.05,
+      "fov": 30.07
+    },
+    {
+      "frame": 122,
+      "t": 2.0333,
+      "playerX": 24.928,
+      "camX": 15.09,
+      "lookAhead": -1.334,
+      "screenXPercent": 46.43,
+      "fov": 30.06
+    },
+    {
+      "frame": 123,
+      "t": 2.05,
+      "playerX": 24.801,
+      "camX": 14.88,
+      "lookAhead": -1.448,
+      "screenXPercent": 46.83,
+      "fov": 30.05
+    },
+    {
+      "frame": 124,
+      "t": 2.0667,
+      "playerX": 24.669,
+      "camX": 14.663,
+      "lookAhead": -1.56,
+      "screenXPercent": 47.23,
+      "fov": 30.04
+    },
+    {
+      "frame": 125,
+      "t": 2.0833,
+      "playerX": 24.532,
+      "camX": 14.44,
+      "lookAhead": -1.67,
+      "screenXPercent": 47.63,
+      "fov": 30.04
+    },
+    {
+      "frame": 126,
+      "t": 2.1,
+      "playerX": 24.39,
+      "camX": 14.211,
+      "lookAhead": -1.779,
+      "screenXPercent": 48.03,
+      "fov": 30.03
+    },
+    {
+      "frame": 127,
+      "t": 2.1167,
+      "playerX": 24.243,
+      "camX": 13.977,
+      "lookAhead": -1.885,
+      "screenXPercent": 48.42,
+      "fov": 30.03
+    },
+    {
+      "frame": 128,
+      "t": 2.1333,
+      "playerX": 24.091,
+      "camX": 13.738,
+      "lookAhead": -1.991,
+      "screenXPercent": 48.81,
+      "fov": 30.04
+    },
+    {
+      "frame": 129,
+      "t": 2.15,
+      "playerX": 23.938,
+      "camX": 13.495,
+      "lookAhead": -2.094,
+      "screenXPercent": 49.18,
+      "fov": 30.06
+    },
+    {
+      "frame": 130,
+      "t": 2.1667,
+      "playerX": 23.784,
+      "camX": 13.251,
+      "lookAhead": -2.193,
+      "screenXPercent": 49.53,
+      "fov": 30.1
+    },
+    {
+      "frame": 131,
+      "t": 2.1833,
+      "playerX": 23.631,
+      "camX": 13.004,
+      "lookAhead": -2.285,
+      "screenXPercent": 49.87,
+      "fov": 30.15
+    },
+    {
+      "frame": 132,
+      "t": 2.2,
+      "playerX": 23.478,
+      "camX": 12.756,
+      "lookAhead": -2.37,
+      "screenXPercent": 50.18,
+      "fov": 30.21
+    },
+    {
+      "frame": 133,
+      "t": 2.2167,
+      "playerX": 23.324,
+      "camX": 12.506,
+      "lookAhead": -2.448,
+      "screenXPercent": 50.47,
+      "fov": 30.3
+    },
+    {
+      "frame": 134,
+      "t": 2.2333,
+      "playerX": 23.171,
+      "camX": 12.254,
+      "lookAhead": -2.518,
+      "screenXPercent": 50.75,
+      "fov": 30.39
+    },
+    {
+      "frame": 135,
+      "t": 2.25,
+      "playerX": 23.018,
+      "camX": 12.001,
+      "lookAhead": -2.581,
+      "screenXPercent": 51.02,
+      "fov": 30.49
+    },
+    {
+      "frame": 136,
+      "t": 2.2667,
+      "playerX": 22.864,
+      "camX": 11.748,
+      "lookAhead": -2.637,
+      "screenXPercent": 51.27,
+      "fov": 30.6
+    },
+    {
+      "frame": 137,
+      "t": 2.2833,
+      "playerX": 22.711,
+      "camX": 11.494,
+      "lookAhead": -2.686,
+      "screenXPercent": 51.53,
+      "fov": 30.71
+    },
+    {
+      "frame": 138,
+      "t": 2.3,
+      "playerX": 22.558,
+      "camX": 11.24,
+      "lookAhead": -2.729,
+      "screenXPercent": 51.77,
+      "fov": 30.82
+    },
+    {
+      "frame": 139,
+      "t": 2.3167,
+      "playerX": 22.404,
+      "camX": 10.986,
+      "lookAhead": -2.767,
+      "screenXPercent": 52.02,
+      "fov": 30.93
+    },
+    {
+      "frame": 140,
+      "t": 2.3333,
+      "playerX": 22.251,
+      "camX": 10.733,
+      "lookAhead": -2.8,
+      "screenXPercent": 52.27,
+      "fov": 31.04
+    },
+    {
+      "frame": 141,
+      "t": 2.35,
+      "playerX": 22.098,
+      "camX": 10.482,
+      "lookAhead": -2.829,
+      "screenXPercent": 52.52,
+      "fov": 31.14
+    },
+    {
+      "frame": 142,
+      "t": 2.3667,
+      "playerX": 21.944,
+      "camX": 10.232,
+      "lookAhead": -2.854,
+      "screenXPercent": 52.78,
+      "fov": 31.23
+    },
+    {
+      "frame": 143,
+      "t": 2.3833,
+      "playerX": 21.791,
+      "camX": 9.984,
+      "lookAhead": -2.875,
+      "screenXPercent": 53.03,
+      "fov": 31.32
+    },
+    {
+      "frame": 144,
+      "t": 2.4,
+      "playerX": 21.638,
+      "camX": 9.739,
+      "lookAhead": -2.893,
+      "screenXPercent": 53.28,
+      "fov": 31.4
+    },
+    {
+      "frame": 145,
+      "t": 2.4167,
+      "playerX": 21.484,
+      "camX": 9.496,
+      "lookAhead": -2.909,
+      "screenXPercent": 53.54,
+      "fov": 31.48
+    },
+    {
+      "frame": 146,
+      "t": 2.4333,
+      "playerX": 21.331,
+      "camX": 9.257,
+      "lookAhead": -2.923,
+      "screenXPercent": 53.79,
+      "fov": 31.55
+    },
+    {
+      "frame": 147,
+      "t": 2.45,
+      "playerX": 21.178,
+      "camX": 9.021,
+      "lookAhead": -2.935,
+      "screenXPercent": 54.04,
+      "fov": 31.6
+    },
+    {
+      "frame": 148,
+      "t": 2.4667,
+      "playerX": 21.024,
+      "camX": 8.788,
+      "lookAhead": -2.945,
+      "screenXPercent": 54.28,
+      "fov": 31.66
+    },
+    {
+      "frame": 149,
+      "t": 2.4833,
+      "playerX": 20.871,
+      "camX": 8.56,
+      "lookAhead": -2.953,
+      "screenXPercent": 54.52,
+      "fov": 31.71
+    },
+    {
+      "frame": 150,
+      "t": 2.5,
+      "playerX": 20.718,
+      "camX": 8.335,
+      "lookAhead": -2.96,
+      "screenXPercent": 54.75,
+      "fov": 31.75
+    },
+    {
+      "frame": 151,
+      "t": 2.5167,
+      "playerX": 20.564,
+      "camX": 8.115,
+      "lookAhead": -2.966,
+      "screenXPercent": 54.97,
+      "fov": 31.78
+    },
+    {
+      "frame": 152,
+      "t": 2.5333,
+      "playerX": 20.411,
+      "camX": 7.898,
+      "lookAhead": -2.972,
+      "screenXPercent": 55.18,
+      "fov": 31.82
+    },
+    {
+      "frame": 153,
+      "t": 2.55,
+      "playerX": 20.258,
+      "camX": 7.685,
+      "lookAhead": -2.976,
+      "screenXPercent": 55.39,
+      "fov": 31.84
+    },
+    {
+      "frame": 154,
+      "t": 2.5667,
+      "playerX": 20.104,
+      "camX": 7.476,
+      "lookAhead": -2.98,
+      "screenXPercent": 55.58,
+      "fov": 31.87
+    },
+    {
+      "frame": 155,
+      "t": 2.5833,
+      "playerX": 19.951,
+      "camX": 7.271,
+      "lookAhead": -2.983,
+      "screenXPercent": 55.76,
+      "fov": 31.89
+    },
+    {
+      "frame": 156,
+      "t": 2.6,
+      "playerX": 19.798,
+      "camX": 7.07,
+      "lookAhead": -2.986,
+      "screenXPercent": 55.94,
+      "fov": 31.9
+    },
+    {
+      "frame": 157,
+      "t": 2.6167,
+      "playerX": 19.644,
+      "camX": 6.872,
+      "lookAhead": -2.988,
+      "screenXPercent": 56.1,
+      "fov": 31.92
+    },
+    {
+      "frame": 158,
+      "t": 2.6333,
+      "playerX": 19.491,
+      "camX": 6.678,
+      "lookAhead": -2.99,
+      "screenXPercent": 56.25,
+      "fov": 31.93
+    },
+    {
+      "frame": 159,
+      "t": 2.65,
+      "playerX": 19.338,
+      "camX": 6.487,
+      "lookAhead": -2.991,
+      "screenXPercent": 56.39,
+      "fov": 31.94
+    }
+  ],
+  "vertSamples": [
+    {
+      "frame": 0,
+      "t": 0,
+      "playerY": 5,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 35
+    },
+    {
+      "frame": 1,
+      "t": 0.0167,
+      "playerY": 5,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 35
+    },
+    {
+      "frame": 2,
+      "t": 0.0333,
+      "playerY": 5.304,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 37.46
+    },
+    {
+      "frame": 3,
+      "t": 0.05,
+      "playerY": 5.596,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 39.82
+    },
+    {
+      "frame": 4,
+      "t": 0.0667,
+      "playerY": 5.877,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 42.08
+    },
+    {
+      "frame": 5,
+      "t": 0.0833,
+      "playerY": 6.145,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 44.25
+    },
+    {
+      "frame": 6,
+      "t": 0.1,
+      "playerY": 6.401,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 46.32
+    },
+    {
+      "frame": 7,
+      "t": 0.1167,
+      "playerY": 6.646,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 48.3
+    },
+    {
+      "frame": 8,
+      "t": 0.1333,
+      "playerY": 6.879,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 50.18
+    },
+    {
+      "frame": 9,
+      "t": 0.15,
+      "playerY": 7.1,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 51.97
+    },
+    {
+      "frame": 10,
+      "t": 0.1667,
+      "playerY": 7.308,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 53.65
+    },
+    {
+      "frame": 11,
+      "t": 0.1833,
+      "playerY": 7.506,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 55.25
+    },
+    {
+      "frame": 12,
+      "t": 0.2,
+      "playerY": 7.691,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 56.74
+    },
+    {
+      "frame": 13,
+      "t": 0.2167,
+      "playerY": 7.864,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 58.14
+    },
+    {
+      "frame": 14,
+      "t": 0.2333,
+      "playerY": 8.025,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 59.45
+    },
+    {
+      "frame": 15,
+      "t": 0.25,
+      "playerY": 8.175,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 60.66
+    },
+    {
+      "frame": 16,
+      "t": 0.2667,
+      "playerY": 8.313,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 61.77
+    },
+    {
+      "frame": 17,
+      "t": 0.2833,
+      "playerY": 8.438,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 62.78
+    },
+    {
+      "frame": 18,
+      "t": 0.3,
+      "playerY": 8.552,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 63.7
+    },
+    {
+      "frame": 19,
+      "t": 0.3167,
+      "playerY": 8.654,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 64.53
+    },
+    {
+      "frame": 20,
+      "t": 0.3333,
+      "playerY": 8.744,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 65.25
+    },
+    {
+      "frame": 21,
+      "t": 0.35,
+      "playerY": 8.822,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 65.89
+    },
+    {
+      "frame": 22,
+      "t": 0.3667,
+      "playerY": 8.889,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 66.42
+    },
+    {
+      "frame": 23,
+      "t": 0.3833,
+      "playerY": 8.943,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 66.86
+    },
+    {
+      "frame": 24,
+      "t": 0.4,
+      "playerY": 8.985,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 67.21
+    },
+    {
+      "frame": 25,
+      "t": 0.4167,
+      "playerY": 9.016,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 67.45
+    },
+    {
+      "frame": 26,
+      "t": 0.4333,
+      "playerY": 9.037,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 67.62
+    },
+    {
+      "frame": 27,
+      "t": 0.45,
+      "playerY": 9.05,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 67.73
+    },
+    {
+      "frame": 28,
+      "t": 0.4667,
+      "playerY": 9.055,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 67.77
+    },
+    {
+      "frame": 29,
+      "t": 0.4833,
+      "playerY": 9.053,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 67.75
+    },
+    {
+      "frame": 30,
+      "t": 0.5,
+      "playerY": 9.038,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 67.63
+    },
+    {
+      "frame": 31,
+      "t": 0.5167,
+      "playerY": 9.006,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 67.37
+    },
+    {
+      "frame": 32,
+      "t": 0.5333,
+      "playerY": 8.957,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 66.97
+    },
+    {
+      "frame": 33,
+      "t": 0.55,
+      "playerY": 8.89,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 66.44
+    },
+    {
+      "frame": 34,
+      "t": 0.5667,
+      "playerY": 8.806,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 65.76
+    },
+    {
+      "frame": 35,
+      "t": 0.5833,
+      "playerY": 8.705,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 64.94
+    },
+    {
+      "frame": 36,
+      "t": 0.6,
+      "playerY": 8.587,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 63.99
+    },
+    {
+      "frame": 37,
+      "t": 0.6167,
+      "playerY": 8.452,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 62.89
+    },
+    {
+      "frame": 38,
+      "t": 0.6333,
+      "playerY": 8.299,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 61.66
+    },
+    {
+      "frame": 39,
+      "t": 0.65,
+      "playerY": 8.129,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 60.29
+    },
+    {
+      "frame": 40,
+      "t": 0.6667,
+      "playerY": 7.942,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 58.78
+    },
+    {
+      "frame": 41,
+      "t": 0.6833,
+      "playerY": 7.738,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 57.12
+    },
+    {
+      "frame": 42,
+      "t": 0.7,
+      "playerY": 7.516,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 55.33
+    },
+    {
+      "frame": 43,
+      "t": 0.7167,
+      "playerY": 7.278,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 53.41
+    },
+    {
+      "frame": 44,
+      "t": 0.7333,
+      "playerY": 7.022,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 51.34
+    },
+    {
+      "frame": 45,
+      "t": 0.75,
+      "playerY": 6.748,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 49.13
+    },
+    {
+      "frame": 46,
+      "t": 0.7667,
+      "playerY": 6.458,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 46.78
+    },
+    {
+      "frame": 47,
+      "t": 0.7833,
+      "playerY": 6.15,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 44.3
+    },
+    {
+      "frame": 48,
+      "t": 0.8,
+      "playerY": 5.826,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 41.67
+    },
+    {
+      "frame": 49,
+      "t": 0.8167,
+      "playerY": 5.484,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 38.91
+    },
+    {
+      "frame": 50,
+      "t": 0.8333,
+      "playerY": 5.124,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 36
+    },
+    {
+      "frame": 51,
+      "t": 0.85,
+      "playerY": 5,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 35
+    },
+    {
+      "frame": 52,
+      "t": 0.8667,
+      "playerY": 5,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 35
+    },
+    {
+      "frame": 53,
+      "t": 0.8833,
+      "playerY": 5,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 35
+    },
+    {
+      "frame": 54,
+      "t": 0.9,
+      "playerY": 5,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 35
+    },
+    {
+      "frame": 55,
+      "t": 0.9167,
+      "playerY": 5,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 35
+    },
+    {
+      "frame": 56,
+      "t": 0.9333,
+      "playerY": 5,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 35
+    },
+    {
+      "frame": 57,
+      "t": 0.95,
+      "playerY": 5,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 35
+    },
+    {
+      "frame": 58,
+      "t": 0.9667,
+      "playerY": 5,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 35
+    },
+    {
+      "frame": 59,
+      "t": 0.9833,
+      "playerY": 5,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 35
+    },
+    {
+      "frame": 60,
+      "t": 1,
+      "playerY": 5,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 35
+    },
+    {
+      "frame": 61,
+      "t": 1.0167,
+      "playerY": 5,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 35
+    },
+    {
+      "frame": 62,
+      "t": 1.0333,
+      "playerY": 5,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 35
+    },
+    {
+      "frame": 63,
+      "t": 1.05,
+      "playerY": 5,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 35
+    },
+    {
+      "frame": 64,
+      "t": 1.0667,
+      "playerY": 5,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 35
+    },
+    {
+      "frame": 65,
+      "t": 1.0833,
+      "playerY": 5,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 35
+    },
+    {
+      "frame": 66,
+      "t": 1.1,
+      "playerY": 5.427,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 38.45
+    },
+    {
+      "frame": 67,
+      "t": 1.1167,
+      "playerY": 5.843,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 41.81
+    },
+    {
+      "frame": 68,
+      "t": 1.1333,
+      "playerY": 6.246,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 45.07
+    },
+    {
+      "frame": 69,
+      "t": 1.15,
+      "playerY": 6.638,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 48.24
+    },
+    {
+      "frame": 70,
+      "t": 1.1667,
+      "playerY": 7.018,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 51.31
+    },
+    {
+      "frame": 71,
+      "t": 1.1833,
+      "playerY": 7.386,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 54.28
+    },
+    {
+      "frame": 72,
+      "t": 1.2,
+      "playerY": 7.742,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 57.16
+    },
+    {
+      "frame": 73,
+      "t": 1.2167,
+      "playerY": 8.086,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 59.94
+    },
+    {
+      "frame": 74,
+      "t": 1.2333,
+      "playerY": 8.418,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 62.62
+    },
+    {
+      "frame": 75,
+      "t": 1.25,
+      "playerY": 8.739,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 65.21
+    },
+    {
+      "frame": 76,
+      "t": 1.2667,
+      "playerY": 9.047,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 67.71
+    },
+    {
+      "frame": 77,
+      "t": 1.2833,
+      "playerY": 9.344,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 70.1
+    },
+    {
+      "frame": 78,
+      "t": 1.3,
+      "playerY": 9.629,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 72.4
+    },
+    {
+      "frame": 79,
+      "t": 1.3167,
+      "playerY": 9.902,
+      "camY": 1.569,
+      "anchorY": 5.9,
+      "screenYPercent": 74.61
+    },
+    {
+      "frame": 80,
+      "t": 1.3333,
+      "playerY": 10.162,
+      "camY": 1.578,
+      "anchorY": 6.112,
+      "screenYPercent": 76.64
+    },
+    {
+      "frame": 81,
+      "t": 1.35,
+      "playerY": 10.412,
+      "camY": 1.61,
+      "anchorY": 6.362,
+      "screenYPercent": 78.39
+    },
+    {
+      "frame": 82,
+      "t": 1.3667,
+      "playerY": 10.649,
+      "camY": 1.671,
+      "anchorY": 6.599,
+      "screenYPercent": 79.82
+    },
+    {
+      "frame": 83,
+      "t": 1.3833,
+      "playerY": 10.874,
+      "camY": 1.76,
+      "anchorY": 6.824,
+      "screenYPercent": 80.92
+    },
+    {
+      "frame": 84,
+      "t": 1.4,
+      "playerY": 11.087,
+      "camY": 1.874,
+      "anchorY": 7.037,
+      "screenYPercent": 81.72
+    },
+    {
+      "frame": 85,
+      "t": 1.4167,
+      "playerY": 11.289,
+      "camY": 2.009,
+      "anchorY": 7.239,
+      "screenYPercent": 82.26
+    },
+    {
+      "frame": 86,
+      "t": 1.4333,
+      "playerY": 11.478,
+      "camY": 2.158,
+      "anchorY": 7.428,
+      "screenYPercent": 82.59
+    },
+    {
+      "frame": 87,
+      "t": 1.45,
+      "playerY": 11.656,
+      "camY": 2.318,
+      "anchorY": 7.606,
+      "screenYPercent": 82.73
+    },
+    {
+      "frame": 88,
+      "t": 1.4667,
+      "playerY": 11.822,
+      "camY": 2.485,
+      "anchorY": 7.772,
+      "screenYPercent": 82.73
+    },
+    {
+      "frame": 89,
+      "t": 1.4833,
+      "playerY": 11.976,
+      "camY": 2.654,
+      "anchorY": 7.926,
+      "screenYPercent": 82.6
+    },
+    {
+      "frame": 90,
+      "t": 1.5,
+      "playerY": 12.118,
+      "camY": 2.823,
+      "anchorY": 8.068,
+      "screenYPercent": 82.39
+    },
+    {
+      "frame": 91,
+      "t": 1.5167,
+      "playerY": 12.248,
+      "camY": 2.988,
+      "anchorY": 8.198,
+      "screenYPercent": 82.1
+    },
+    {
+      "frame": 92,
+      "t": 1.5333,
+      "playerY": 12.353,
+      "camY": 3.149,
+      "anchorY": 8.303,
+      "screenYPercent": 81.65
+    },
+    {
+      "frame": 93,
+      "t": 1.55,
+      "playerY": 12.421,
+      "camY": 3.3,
+      "anchorY": 8.371,
+      "screenYPercent": 80.97
+    },
+    {
+      "frame": 94,
+      "t": 1.5667,
+      "playerY": 12.45,
+      "camY": 3.439,
+      "anchorY": 8.4,
+      "screenYPercent": 80.09
+    },
+    {
+      "frame": 95,
+      "t": 1.5833,
+      "playerY": 12.441,
+      "camY": 3.56,
+      "anchorY": 8.4,
+      "screenYPercent": 79.03
+    },
+    {
+      "frame": 96,
+      "t": 1.6,
+      "playerY": 12.404,
+      "camY": 3.664,
+      "anchorY": 8.4,
+      "screenYPercent": 77.9
+    },
+    {
+      "frame": 97,
+      "t": 1.6167,
+      "playerY": 12.35,
+      "camY": 3.749,
+      "anchorY": 8.4,
+      "screenYPercent": 76.78
+    },
+    {
+      "frame": 98,
+      "t": 1.6333,
+      "playerY": 12.279,
+      "camY": 3.819,
+      "anchorY": 8.4,
+      "screenYPercent": 75.64
+    },
+    {
+      "frame": 99,
+      "t": 1.65,
+      "playerY": 12.191,
+      "camY": 3.875,
+      "anchorY": 8.4,
+      "screenYPercent": 74.48
+    },
+    {
+      "frame": 100,
+      "t": 1.6667,
+      "playerY": 12.086,
+      "camY": 3.919,
+      "anchorY": 8.4,
+      "screenYPercent": 73.27
+    },
+    {
+      "frame": 101,
+      "t": 1.6833,
+      "playerY": 11.963,
+      "camY": 3.955,
+      "anchorY": 8.4,
+      "screenYPercent": 71.99
+    },
+    {
+      "frame": 102,
+      "t": 1.7,
+      "playerY": 11.823,
+      "camY": 3.983,
+      "anchorY": 8.4,
+      "screenYPercent": 70.63
+    },
+    {
+      "frame": 103,
+      "t": 1.7167,
+      "playerY": 11.666,
+      "camY": 4.005,
+      "anchorY": 8.4,
+      "screenYPercent": 69.18
+    },
+    {
+      "frame": 104,
+      "t": 1.7333,
+      "playerY": 11.492,
+      "camY": 4.022,
+      "anchorY": 8.4,
+      "screenYPercent": 67.63
+    },
+    {
+      "frame": 105,
+      "t": 1.75,
+      "playerY": 11.3,
+      "camY": 4.036,
+      "anchorY": 8.4,
+      "screenYPercent": 65.97
+    },
+    {
+      "frame": 106,
+      "t": 1.7667,
+      "playerY": 11.091,
+      "camY": 4.046,
+      "anchorY": 8.4,
+      "screenYPercent": 64.2
+    },
+    {
+      "frame": 107,
+      "t": 1.7833,
+      "playerY": 11,
+      "camY": 4.076,
+      "anchorY": 8.408,
+      "screenYPercent": 63.22
+    },
+    {
+      "frame": 108,
+      "t": 1.8,
+      "playerY": 11,
+      "camY": 4.1,
+      "anchorY": 8.431,
+      "screenYPercent": 63.03
+    },
+    {
+      "frame": 109,
+      "t": 1.8167,
+      "playerY": 11,
+      "camY": 4.137,
+      "anchorY": 8.469,
+      "screenYPercent": 62.73
+    },
+    {
+      "frame": 110,
+      "t": 1.8333,
+      "playerY": 11,
+      "camY": 4.188,
+      "anchorY": 8.52,
+      "screenYPercent": 62.32
+    },
+    {
+      "frame": 111,
+      "t": 1.85,
+      "playerY": 11,
+      "camY": 4.252,
+      "anchorY": 8.583,
+      "screenYPercent": 61.8
+    },
+    {
+      "frame": 112,
+      "t": 1.8667,
+      "playerY": 11,
+      "camY": 4.328,
+      "anchorY": 8.659,
+      "screenYPercent": 61.19
+    },
+    {
+      "frame": 113,
+      "t": 1.8833,
+      "playerY": 11,
+      "camY": 4.414,
+      "anchorY": 8.745,
+      "screenYPercent": 60.49
+    },
+    {
+      "frame": 114,
+      "t": 1.9,
+      "playerY": 11,
+      "camY": 4.51,
+      "anchorY": 8.841,
+      "screenYPercent": 59.72
+    },
+    {
+      "frame": 115,
+      "t": 1.9167,
+      "playerY": 11,
+      "camY": 4.615,
+      "anchorY": 8.947,
+      "screenYPercent": 58.87
+    },
+    {
+      "frame": 116,
+      "t": 1.9333,
+      "playerY": 11,
+      "camY": 4.729,
+      "anchorY": 9.06,
+      "screenYPercent": 57.95
+    },
+    {
+      "frame": 117,
+      "t": 1.95,
+      "playerY": 11,
+      "camY": 4.849,
+      "anchorY": 9.18,
+      "screenYPercent": 56.98
+    },
+    {
+      "frame": 118,
+      "t": 1.9667,
+      "playerY": 11,
+      "camY": 4.976,
+      "anchorY": 9.307,
+      "screenYPercent": 55.95
+    },
+    {
+      "frame": 119,
+      "t": 1.9833,
+      "playerY": 11,
+      "camY": 5.108,
+      "anchorY": 9.439,
+      "screenYPercent": 54.88
+    },
+    {
+      "frame": 120,
+      "t": 2,
+      "playerY": 11,
+      "camY": 5.245,
+      "anchorY": 9.576,
+      "screenYPercent": 53.78
+    },
+    {
+      "frame": 121,
+      "t": 2.0167,
+      "playerY": 11,
+      "camY": 5.385,
+      "anchorY": 9.716,
+      "screenYPercent": 52.65
+    },
+    {
+      "frame": 122,
+      "t": 2.0333,
+      "playerY": 11,
+      "camY": 5.528,
+      "anchorY": 9.859,
+      "screenYPercent": 51.49
+    },
+    {
+      "frame": 123,
+      "t": 2.05,
+      "playerY": 11,
+      "camY": 5.673,
+      "anchorY": 10.004,
+      "screenYPercent": 50.32
+    },
+    {
+      "frame": 124,
+      "t": 2.0667,
+      "playerY": 11,
+      "camY": 5.819,
+      "anchorY": 10.15,
+      "screenYPercent": 49.14
+    },
+    {
+      "frame": 125,
+      "t": 2.0833,
+      "playerY": 11,
+      "camY": 5.964,
+      "anchorY": 10.296,
+      "screenYPercent": 47.97
+    },
+    {
+      "frame": 126,
+      "t": 2.1,
+      "playerY": 11,
+      "camY": 6.109,
+      "anchorY": 10.44,
+      "screenYPercent": 46.8
+    },
+    {
+      "frame": 127,
+      "t": 2.1167,
+      "playerY": 11,
+      "camY": 6.252,
+      "anchorY": 10.583,
+      "screenYPercent": 45.64
+    },
+    {
+      "frame": 128,
+      "t": 2.1333,
+      "playerY": 11,
+      "camY": 6.392,
+      "anchorY": 10.724,
+      "screenYPercent": 44.51
+    },
+    {
+      "frame": 129,
+      "t": 2.15,
+      "playerY": 11,
+      "camY": 6.529,
+      "anchorY": 10.86,
+      "screenYPercent": 43.4
+    },
+    {
+      "frame": 130,
+      "t": 2.1667,
+      "playerY": 11,
+      "camY": 6.661,
+      "anchorY": 10.993,
+      "screenYPercent": 42.33
+    },
+    {
+      "frame": 131,
+      "t": 2.1833,
+      "playerY": 11,
+      "camY": 6.788,
+      "anchorY": 11.119,
+      "screenYPercent": 41.31
+    },
+    {
+      "frame": 132,
+      "t": 2.2,
+      "playerY": 11,
+      "camY": 6.909,
+      "anchorY": 11.24,
+      "screenYPercent": 40.34
+    },
+    {
+      "frame": 133,
+      "t": 2.2167,
+      "playerY": 11,
+      "camY": 7.022,
+      "anchorY": 11.353,
+      "screenYPercent": 39.42
+    },
+    {
+      "frame": 134,
+      "t": 2.2333,
+      "playerY": 11,
+      "camY": 7.127,
+      "anchorY": 11.458,
+      "screenYPercent": 38.57
+    },
+    {
+      "frame": 135,
+      "t": 2.25,
+      "playerY": 11,
+      "camY": 7.223,
+      "anchorY": 11.554,
+      "screenYPercent": 37.79
+    },
+    {
+      "frame": 136,
+      "t": 2.2667,
+      "playerY": 11,
+      "camY": 7.309,
+      "anchorY": 11.641,
+      "screenYPercent": 37.1
+    },
+    {
+      "frame": 137,
+      "t": 2.2833,
+      "playerY": 11,
+      "camY": 7.385,
+      "anchorY": 11.716,
+      "screenYPercent": 36.49
+    },
+    {
+      "frame": 138,
+      "t": 2.3,
+      "playerY": 11,
+      "camY": 7.449,
+      "anchorY": 11.78,
+      "screenYPercent": 35.97
+    },
+    {
+      "frame": 139,
+      "t": 2.3167,
+      "playerY": 11,
+      "camY": 7.5,
+      "anchorY": 11.831,
+      "screenYPercent": 35.56
+    },
+    {
+      "frame": 140,
+      "t": 2.3333,
+      "playerY": 11,
+      "camY": 7.538,
+      "anchorY": 11.869,
+      "screenYPercent": 35.25
+    },
+    {
+      "frame": 141,
+      "t": 2.35,
+      "playerY": 11,
+      "camY": 7.561,
+      "anchorY": 11.892,
+      "screenYPercent": 35.06
+    },
+    {
+      "frame": 142,
+      "t": 2.3667,
+      "playerY": 11,
+      "camY": 7.561,
+      "anchorY": 11.9,
+      "screenYPercent": 35.06
+    },
+    {
+      "frame": 143,
+      "t": 2.3833,
+      "playerY": 11,
+      "camY": 7.561,
+      "anchorY": 11.9,
+      "screenYPercent": 35.06
+    },
+    {
+      "frame": 144,
+      "t": 2.4,
+      "playerY": 11,
+      "camY": 7.562,
+      "anchorY": 11.9,
+      "screenYPercent": 35.06
+    },
+    {
+      "frame": 145,
+      "t": 2.4167,
+      "playerY": 11,
+      "camY": 7.562,
+      "anchorY": 11.9,
+      "screenYPercent": 35.06
+    },
+    {
+      "frame": 146,
+      "t": 2.4333,
+      "playerY": 11,
+      "camY": 7.562,
+      "anchorY": 11.9,
+      "screenYPercent": 35.05
+    },
+    {
+      "frame": 147,
+      "t": 2.45,
+      "playerY": 11,
+      "camY": 7.563,
+      "anchorY": 11.9,
+      "screenYPercent": 35.05
+    },
+    {
+      "frame": 148,
+      "t": 2.4667,
+      "playerY": 11,
+      "camY": 7.563,
+      "anchorY": 11.9,
+      "screenYPercent": 35.04
+    },
+    {
+      "frame": 149,
+      "t": 2.4833,
+      "playerY": 11,
+      "camY": 7.564,
+      "anchorY": 11.9,
+      "screenYPercent": 35.04
+    },
+    {
+      "frame": 150,
+      "t": 2.5,
+      "playerY": 11,
+      "camY": 7.564,
+      "anchorY": 11.9,
+      "screenYPercent": 35.04
+    },
+    {
+      "frame": 151,
+      "t": 2.5167,
+      "playerY": 11,
+      "camY": 7.565,
+      "anchorY": 11.9,
+      "screenYPercent": 35.03
+    },
+    {
+      "frame": 152,
+      "t": 2.5333,
+      "playerY": 11,
+      "camY": 7.565,
+      "anchorY": 11.9,
+      "screenYPercent": 35.03
+    },
+    {
+      "frame": 153,
+      "t": 2.55,
+      "playerY": 11,
+      "camY": 7.566,
+      "anchorY": 11.9,
+      "screenYPercent": 35.03
+    },
+    {
+      "frame": 154,
+      "t": 2.5667,
+      "playerY": 11,
+      "camY": 7.566,
+      "anchorY": 11.9,
+      "screenYPercent": 35.02
+    },
+    {
+      "frame": 155,
+      "t": 2.5833,
+      "playerY": 11,
+      "camY": 7.566,
+      "anchorY": 11.9,
+      "screenYPercent": 35.02
+    },
+    {
+      "frame": 156,
+      "t": 2.6,
+      "playerY": 11,
+      "camY": 7.566,
+      "anchorY": 11.9,
+      "screenYPercent": 35.02
+    },
+    {
+      "frame": 157,
+      "t": 2.6167,
+      "playerY": 11,
+      "camY": 7.567,
+      "anchorY": 11.9,
+      "screenYPercent": 35.02
+    },
+    {
+      "frame": 158,
+      "t": 2.6333,
+      "playerY": 11,
+      "camY": 7.567,
+      "anchorY": 11.9,
+      "screenYPercent": 35.01
+    },
+    {
+      "frame": 159,
+      "t": 2.65,
+      "playerY": 11,
+      "camY": 7.567,
+      "anchorY": 11.9,
+      "screenYPercent": 35.01
+    }
+  ]
+}

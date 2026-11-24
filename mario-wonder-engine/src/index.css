@@ -1,0 +1,776 @@
+/* Global Reset & Engine Styles */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #0a0a1e;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* Prevent browser default keyboard behaviors */
+canvas:focus {
+  outline: none;
+}
+
+/* Scrollbar hide for clean fullscreen */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Selection prevention during gameplay */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* ── Single Collapsible Menu Toggle Button ─────────────────────────── */
+.mwe-menu-toggle {
+  position: absolute;
+  top: max(10px, env(safe-area-inset-top));
+  right: max(12px, env(safe-area-inset-right));
+  z-index: 1200;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 40px;
+  min-width: 44px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(110, 180, 255, 0.38);
+  background: rgba(10, 14, 34, 0.92);
+  color: #E2E8F0;
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  pointer-events: auto;
+  white-space: nowrap;
+  transition: background-color 140ms ease, border-color 140ms ease, transform 120ms ease;
+}
+
+.mwe-menu-toggle:hover {
+  background: rgba(15, 23, 52, 0.96);
+  border-color: rgba(56, 189, 248, 0.72);
+  color: #F8FAFC;
+}
+
+.mwe-menu-toggle:active {
+  transform: scale(0.97);
+}
+
+.mwe-menu-toggle:focus-visible {
+  outline: 2px solid #38BDF8;
+  outline-offset: 2px;
+}
+
+.mwe-menu-toggle.is-open {
+  background: rgba(14, 116, 144, 0.94);
+  border-color: #38BDF8;
+  color: #F8FAFC;
+}
+
+/* ── Responsive Command Drawer ─────────────────────────────────────── */
+.mwe-drawer {
+  position: absolute;
+  top: calc(max(10px, env(safe-area-inset-top)) + 48px);
+  right: max(12px, env(safe-area-inset-right));
+  width: min(560px, calc(100vw - 24px));
+  max-height: calc(100dvh - 72px);
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  border: 1px solid rgba(110, 180, 255, 0.32);
+  background: rgba(10, 14, 34, 0.96);
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.68);
+  color: #E2E8F0;
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  z-index: 1190;
+  pointer-events: auto;
+  overflow: hidden;
+}
+
+.mwe-drawer-header {
+  padding: 14px 16px 10px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.mwe-drawer-header-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 10px;
+  min-width: 0;
+}
+
+.mwe-drawer-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: #F8FAFC;
+  letter-spacing: 0.3px;
+  min-width: 0;
+}
+
+.mwe-drawer-status {
+  font-size: 11px;
+  font-weight: 700;
+  color: #38BDF8;
+  white-space: nowrap;
+}
+
+.mwe-drawer-hint {
+  margin-top: 3px;
+  font-size: 11px;
+  color: #94A3B8;
+  line-height: 1.35;
+}
+
+.mwe-tablist {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px;
+  padding: 8px 14px;
+  background: rgba(6, 9, 24, 0.65);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.mwe-tab-btn {
+  min-height: 36px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #94A3B8;
+  font-family: inherit;
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 140ms ease, color 140ms ease, border-color 140ms ease;
+}
+
+.mwe-tab-btn:hover {
+  color: #E2E8F0;
+  background: rgba(30, 41, 59, 0.6);
+}
+
+.mwe-tab-btn.is-active {
+  background: rgba(14, 116, 144, 0.85);
+  border-color: rgba(56, 189, 248, 0.65);
+  color: #F8FAFC;
+}
+
+.mwe-drawer-body {
+  padding: 14px 16px 16px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.mwe-drawer-body::-webkit-scrollbar {
+  display: block;
+  width: 5px;
+}
+
+.mwe-drawer-body::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.28);
+  border-radius: 99px;
+}
+
+.mwe-section-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mwe-section {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.mwe-section-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #94A3B8;
+  letter-spacing: 0.6px;
+}
+
+.mwe-two-col {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.mwe-room-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.mwe-gauntlet-box {
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(20, 16, 6, 0.55);
+  border: 1px solid rgba(250, 204, 21, 0.28);
+}
+
+.mwe-gauntlet-label {
+  color: #FACC15;
+}
+
+.mwe-gauntlet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.mwe-action-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.mwe-item-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  min-height: 38px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  background: rgba(15, 23, 42, 0.86);
+  color: #CBD5E1;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 130ms ease, border-color 130ms ease, color 130ms ease;
+}
+
+.mwe-item-btn:hover:not(:disabled) {
+  border-color: rgba(148, 163, 184, 0.55);
+  background: rgba(30, 41, 59, 0.92);
+  color: #F8FAFC;
+}
+
+.mwe-item-btn:disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+}
+
+.mwe-item-btn.is-active {
+  background: rgba(14, 116, 144, 0.9);
+  border-color: #38BDF8;
+  color: #F8FAFC;
+}
+
+.mwe-item-btn.is-gauntlet-active {
+  background: rgba(202, 138, 4, 0.88);
+  border-color: #FACC15;
+  color: #FEF9C3;
+}
+
+.mwe-item-btn.is-warn {
+  background: rgba(161, 98, 7, 0.88);
+  border-color: #FACC15;
+  color: #FEF08A;
+}
+
+.mwe-item-btn.is-danger {
+  background: rgba(153, 27, 27, 0.9);
+  border-color: #F87171;
+  color: #FEE2E2;
+}
+
+.mwe-verify-btn {
+  border-color: rgba(74, 222, 128, 0.42);
+  color: #BBF7D0;
+}
+
+.mwe-gallery-btn {
+  border-color: rgba(245, 158, 11, 0.42);
+  color: #FEF3C7;
+}
+
+.mwe-item-num {
+  color: #38BDF8;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.mwe-item-btn.is-active .mwe-item-num {
+  color: #E0F2FE;
+}
+
+.mwe-item-btn.is-gauntlet-active .mwe-item-num {
+  color: #FEF08A;
+}
+
+.mwe-item-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mwe-segmented {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px;
+  padding: 4px;
+  border-radius: 9px;
+  background: rgba(5, 8, 22, 0.78);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.mwe-preset-group {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.mwe-seg-btn {
+  min-height: 36px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #94A3B8;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 130ms ease, color 130ms ease, border-color 130ms ease;
+}
+
+.mwe-seg-btn:hover {
+  color: #F8FAFC;
+}
+
+.mwe-seg-btn.is-active {
+  background: rgba(14, 116, 144, 0.9);
+  border-color: #38BDF8;
+  color: #F8FAFC;
+}
+
+.mwe-seg-btn.is-accent {
+  background: rgba(76, 29, 149, 0.9);
+  border-color: #C084FC;
+  color: #F3E8FF;
+}
+
+.mwe-seg-btn.is-warn {
+  background: rgba(161, 98, 7, 0.88);
+  border-color: #FACC15;
+  color: #FEF08A;
+}
+
+.mwe-seg-btn.is-char-mario {
+  background: rgba(153, 27, 27, 0.9);
+  border-color: #EF4444;
+  color: #FEE2E2;
+}
+
+.mwe-seg-btn.is-char-luigi {
+  background: rgba(20, 83, 45, 0.92);
+  border-color: #22C55E;
+  color: #DCFCE7;
+}
+
+/* ── Bottom Hint & HUD Responsive Anchoring ────────────────────────── */
+.mwe-bottom-hint {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(226, 232, 240, 0.90);
+  background: rgba(7, 10, 26, 0.84);
+  border: 1px solid rgba(110, 180, 255, 0.20);
+  border-radius: 6px;
+  padding: 3px 10px;
+  font-size: 10px;
+  font-family: "JetBrains Mono", monospace;
+  pointer-events: none;
+  z-index: 500;
+  white-space: nowrap;
+}
+
+.mwe-gameplay-hud {
+  position: absolute;
+  bottom: max(12px, env(safe-area-inset-bottom));
+  left: max(14px, env(safe-area-inset-left));
+}
+
+.mwe-speedometer-hud {
+  position: absolute;
+  bottom: 34px;
+  right: max(12px, env(safe-area-inset-right));
+  width: 204px;
+}
+
+/* Hide bottom keyboard hint on tablet/mobile/short viewports so HUDs never collide */
+@media (max-width: 1100px), (max-height: 540px) {
+  .mwe-bottom-hint {
+    display: none;
+  }
+  .mwe-speedometer-hud {
+    bottom: max(12px, env(safe-area-inset-bottom));
+  }
+}
+
+/* Tablet & Compact Viewports */
+@media (max-width: 768px) {
+  .mwe-menu-toggle {
+    min-height: 44px;
+    padding: 0 14px;
+    font-size: 12.5px;
+  }
+  .mwe-drawer {
+    top: calc(max(10px, env(safe-area-inset-top)) + 52px);
+    left: max(12px, env(safe-area-inset-left));
+    right: max(12px, env(safe-area-inset-right));
+    width: auto;
+    max-height: calc(100dvh - 74px);
+  }
+  .mwe-tab-btn,
+  .mwe-item-btn,
+  .mwe-seg-btn {
+    min-height: 42px;
+  }
+}
+
+/* Mobile Portrait (< 600px) */
+@media (max-width: 600px) {
+  .mwe-two-col {
+    grid-template-columns: 1fr;
+  }
+  .mwe-room-grid,
+  .mwe-action-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .mwe-gauntlet-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .mwe-tab-btn,
+  .mwe-item-btn,
+  .mwe-seg-btn {
+    min-height: 44px;
+    font-size: 11.5px;
+  }
+  .mwe-gameplay-hud {
+    left: 10px;
+    bottom: max(10px, env(safe-area-inset-bottom));
+    max-width: calc(100vw - 20px);
+    gap: 6px !important;
+    padding: 5px 8px !important;
+  }
+  .mwe-speedometer-hud {
+    right: 10px;
+    bottom: calc(max(10px, env(safe-area-inset-bottom)) + 48px);
+    width: 158px;
+    padding: 6px 9px 7px !important;
+  }
+}
+
+/* Mobile Landscape (short height) */
+@media (max-height: 500px) {
+  .mwe-drawer {
+    top: calc(max(8px, env(safe-area-inset-top)) + 48px);
+    max-height: calc(100dvh - 64px);
+  }
+  .mwe-drawer-header {
+    padding: 10px 14px 8px;
+  }
+  .mwe-drawer-body {
+    padding: 10px 14px 12px;
+  }
+  .mwe-room-grid,
+  .mwe-gauntlet-grid,
+  .mwe-action-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* ── Stage 19: Diegetic Minimalist Top-Bar Status Panel ────────────── */
+.mwe-diegetic-topbar {
+  position: absolute;
+  top: max(10px, env(safe-area-inset-top));
+  left: max(12px, env(safe-area-inset-left));
+  max-width: calc(100vw - 138px);
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 12px;
+  border-radius: 10px;
+  background: rgba(10, 14, 34, 0.90);
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  color: #F8FAFC;
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
+  user-select: none;
+  z-index: 620;
+  transition: left 140ms ease;
+}
+
+.mwe-diegetic-topbar.is-shifted {
+  left: 304px;
+  max-width: calc(100vw - 432px);
+}
+
+.mwe-hud-form-circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  border: 2px solid #64748B;
+  background: rgba(30, 41, 59, 0.96);
+  color: #CBD5E1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.mwe-hud-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.mwe-hud-icon {
+  flex-shrink: 0;
+  display: block;
+}
+
+.mwe-hud-val {
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  color: #F8FAFC;
+  line-height: 1;
+}
+
+.mwe-hud-gold {
+  color: #FEF08A;
+}
+
+.mwe-hud-kicker {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  color: #94A3B8;
+  line-height: 1;
+}
+
+.mwe-hud-course-code {
+  color: #38BDF8;
+}
+
+.mwe-hud-act-tag {
+  display: inline-block;
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+.mwe-hud-sep {
+  width: 1px;
+  height: 18px;
+  background: rgba(148, 163, 184, 0.22);
+  flex-shrink: 0;
+}
+
+.mwe-hud-shards {
+  transition: transform 100ms ease-out;
+}
+
+.mwe-hud-shards.is-pop {
+  transform: scale(1.14);
+}
+
+.mwe-hud-shard-spin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 18px;
+  will-change: transform;
+}
+
+/* 3 Circular Star Medallion Sockets */
+.mwe-medallion-sockets {
+  gap: 5px;
+}
+
+.mwe-medallion-socket {
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.92);
+  border: 1.5px solid rgba(148, 163, 184, 0.34);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.65);
+  transition: background-color 160ms ease, border-color 160ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.mwe-medallion-star-poly {
+  fill: rgba(71, 85, 105, 0.45);
+  stroke: rgba(148, 163, 184, 0.42);
+  stroke-width: 1.3;
+  transition: fill 160ms ease, stroke 160ms ease;
+}
+
+.mwe-medallion-socket.is-collected {
+  background: rgba(161, 98, 7, 0.42);
+  border-color: #FACC15;
+  box-shadow: 0 0 10px rgba(250, 204, 21, 0.45), inset 0 0 4px rgba(254, 240, 138, 0.5);
+  transform: scale(1.06);
+}
+
+.mwe-medallion-socket.is-collected .mwe-medallion-star-poly {
+  fill: #FACC15;
+  stroke: #FEF9C3;
+}
+
+/* Countdown Timer & < 50s Amber Warning Flash */
+.mwe-hud-timer {
+  color: #CBD5E1;
+  padding: 2px 6px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: border-color 120ms ease, background-color 120ms ease;
+}
+
+.mwe-hud-timer.is-warning {
+  color: #F59E0B;
+  background: rgba(120, 53, 15, 0.42);
+  border-color: rgba(245, 158, 11, 0.78);
+}
+
+.mwe-hud-timer.is-warning.is-flash-on {
+  background: rgba(180, 83, 9, 0.66);
+  border-color: #FBBF24;
+}
+
+.mwe-timer-warn-glyph {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #F59E0B;
+  color: #0F172A;
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.mwe-hud-clear-badge {
+  display: none;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 800;
+  color: #4ADE80;
+  background: rgba(22, 163, 74, 0.28);
+  border: 1px solid #4ADE80;
+  border-radius: 5px;
+  padding: 2px 6px;
+  letter-spacing: 0.8px;
+}
+
+@media (max-width: 768px) {
+  .mwe-diegetic-topbar {
+    gap: 7px;
+    padding: 4px 9px;
+    max-width: calc(100vw - 120px);
+  }
+  .mwe-hud-kicker,
+  .mwe-hud-act-tag {
+    display: none !important;
+  }
+  .mwe-hud-val {
+    font-size: 11.5px;
+  }
+}
+
+@media (max-width: 560px) {
+  .mwe-diegetic-topbar {
+    gap: 5px;
+    padding: 4px 7px;
+  }
+  .mwe-hud-form-circle,
+  .mwe-hud-sep {
+    display: none;
+  }
+  .mwe-medallion-socket {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+/* ── DualShock 4 Controller UI Focus & Diegetic Hotplug Toast ──────── */
+.mwe-gamepad-focus {
+  outline: 2.5px solid #0084FF !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 4px rgba(0, 132, 255, 0.28) !important;
+  position: relative;
+  z-index: 2;
+}
+
+.mwe-controller-toast {
+  position: absolute;
+  top: max(58px, calc(env(safe-area-inset-top) + 52px));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2200;
+  padding: 8px 16px;
+  border-radius: 10px;
+  background: rgba(10, 14, 34, 0.95);
+  border: 1.5px solid #0084FF;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.58);
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  pointer-events: none;
+  user-select: none;
+  max-width: calc(100vw - 32px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+

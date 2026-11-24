@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="470" viewBox="0 0 880 470">
+  <rect width="880" height="470" fill="#0B1120" rx="12" />
+  <text x="28" y="34" fill="#F8FAFC" font-size="16" font-weight="bold" font-family="monospace">Stage 4 — Acrobatic State Machine &amp; Illegal Transition Arbitration</text>
+  <text x="28" y="54" fill="#94A3B8" font-size="11" font-family="monospace">Strict guards prevent GP during WallSlide, WallSlide during GP, Spin during WallSlide/GP, and double Spin.</text>
+
+  <!-- Grounded Hub -->
+  <rect x="34" y="205" width="145" height="60" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="2" />
+  <text x="106" y="232" text-anchor="middle" fill="#38BDF8" font-size="12" font-weight="bold" font-family="monospace">GROUNDED</text>
+  <text x="106" y="250" text-anchor="middle" fill="#CBD5E1" font-size="10" font-family="monospace">resets Spin &amp; Wall</text>
+
+  <!-- Jump / Fall -->
+  <rect x="255" y="195" width="165" height="80" rx="10" fill="#1E293B" stroke="#4ADE80" stroke-width="2" />
+  <text x="337" y="222" text-anchor="middle" fill="#4ADE80" font-size="12" font-weight="bold" font-family="monospace">JUMP / APEX / FALL</text>
+  <text x="337" y="242" text-anchor="middle" fill="#CBD5E1" font-size="10" font-family="monospace">Airborne hub</text>
+  <text x="337" y="258" text-anchor="middle" fill="#94A3B8" font-size="9" font-family="monospace">canSpin · canGP · canWall</text>
+
+  <!-- Spin Twirl -->
+  <rect x="255" y="80" width="175" height="68" rx="10" fill="#082F49" stroke="#22D3EE" stroke-width="2" />
+  <text x="342" y="106" text-anchor="middle" fill="#22D3EE" font-size="12" font-weight="bold" font-family="monospace">SPIN_TWIRL (18f)</text>
+  <text x="342" y="124" text-anchor="middle" fill="#E0F2FE" font-size="10" font-family="monospace">1x/air · +1.60 · [-1.5,+1.5]</text>
+
+  <!-- Wall Slide -->
+  <rect x="520" y="80" width="165" height="68" rx="10" fill="#451A03" stroke="#F59E0B" stroke-width="2" />
+  <text x="602" y="106" text-anchor="middle" fill="#F59E0B" font-size="12" font-weight="bold" font-family="monospace">WALL_SLIDE</text>
+  <text x="602" y="124" text-anchor="middle" fill="#FEF3C7" font-size="10" font-family="monospace">4.20 t/s clamp · 5f coyote</text>
+
+  <!-- Wall Jump -->
+  <rect x="520" y="195" width="165" height="68" rx="10" fill="#052E16" stroke="#4ADE80" stroke-width="2" />
+  <text x="602" y="221" text-anchor="middle" fill="#4ADE80" font-size="12" font-weight="bold" font-family="monospace">WALL_JUMP</text>
+  <text x="602" y="239" text-anchor="middle" fill="#DCFCE7" font-size="10" font-family="monospace">vx ±8.50 · vy 16.80 · 8f lock</text>
+
+  <!-- Ground Pound -->
+  <rect x="255" y="330" width="195" height="82" rx="10" fill="#4C0519" stroke="#FB7185" stroke-width="2" />
+  <text x="352" y="355" text-anchor="middle" fill="#FB7185" font-size="12" font-weight="bold" font-family="monospace">GROUND POUND</text>
+  <text x="352" y="373" text-anchor="middle" fill="#FFE4E6" font-size="10" font-family="monospace">Windup(10f) -&gt; Fall(28 t/s)</text>
+  <text x="352" y="391" text-anchor="middle" fill="#FDA4AF" font-size="10" font-family="monospace">-&gt; Land(10f, 0.65 trauma)</text>
+
+  <!-- Allowed transitions -->
+  <line x1="179" y1="228" x2="255" y2="228" stroke="#4ADE80" stroke-width="2" />
+  <line x1="337" y1="195" x2="337" y2="148" stroke="#22D3EE" stroke-width="2" />
+  <line x1="420" y1="215" x2="520" y2="128" stroke="#F59E0B" stroke-width="2" />
+  <line x1="602" y1="148" x2="602" y2="195" stroke="#4ADE80" stroke-width="2" />
+  <line x1="520" y1="232" x2="420" y2="232" stroke="#4ADE80" stroke-width="2" />
+  <line x1="337" y1="275" x2="337" y2="330" stroke="#FB7185" stroke-width="2" />
+  <line x1="255" y1="370" x2="106" y2="265" stroke="#FB7185" stroke-width="2" stroke-dasharray="5 3" />
+
+  <!-- Forbidden matrix box -->
+  <rect x="520" y="295" width="330" height="145" rx="8" fill="#0F172A" stroke="#EF4444" stroke-width="1.5" />
+  <text x="536" y="318" fill="#F87171" font-size="11" font-weight="bold" font-family="monospace">BLOCKED TRANSITIONS (GUARDS)</text>
+  <text x="536" y="340" fill="#E2E8F0" font-size="10" font-family="monospace">✕ WallSlide -&gt; GroundPound (blocked)</text>
+  <text x="536" y="359" fill="#E2E8F0" font-size="10" font-family="monospace">✕ WallSlide -&gt; SpinTwirl (blocked)</text>
+  <text x="536" y="378" fill="#E2E8F0" font-size="10" font-family="monospace">✕ GroundPound -&gt; WallSlide (blocked)</text>
+  <text x="536" y="397" fill="#E2E8F0" font-size="10" font-family="monospace">✕ GroundPound -&gt; SpinTwirl (blocked)</text>
+  <text x="536" y="416" fill="#E2E8F0" font-size="10" font-family="monospace">✕ SpinTwirl -&gt; 2nd Spin (until grounded)</text>
+</svg>
